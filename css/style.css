@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 * {
   margin: 0;
@@ -27,7 +26,7 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
+  font-family: 'JSDongkang-Regular' ,'Poppins', 'Graduate', 'Montserrat', 'Ephesis', 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.4;
@@ -46,6 +45,173 @@ body {
 .inner {
   position: relative;
   display: block;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
+
+/* wrap */
+.wrap{
+  position: relative;
+  display: block;
+}
+/* header */
+.header{
+  position: relative;
+  display: block;
+  padding: 0 60px;
+}
+.nav{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  position: relative;
+  display: block;
+}
+.nav-container{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.depth1{
+  position: relative;
+  display: block;
+}
+.depth1 li{
+  position: relative;
+  display: inline-block;
+}
+.depth1 li a{
+  position: relative;
+  display: block;
+  margin: 0 10px;
+}
+.header-btn{
+  position: relative;
+  display: block;
+}
+.header-btn a{
+  position: relative;
+  display: block;
+}
+/* introduce */
+.introduce{
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.intro-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.intro-say{
+  position: relative;
+  display: block;
+}
+.myname{
+  position: relative;
+  display: block;
+}
+.mywork{
+  position: relative;
+  display: block;
+}
+.intro-desc{
+  position: relative;
+  display: block;
+}
+.intro-desc a{
+  position: relative;
+  display: block;
+}
+.intro-btn{
+  position: relative;
+  display: block;
+}
+.intro-btn a{
+  position: relative;
+  display: block;
+}
+/* about */
+.about{
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.about-me{
+  position: relative;
+  display: block;
+}
+.about-left{
+  position: relative;
+  display: block;
+}
+.about-desc{
+  position: relative;
+  display: block;
+}
+.about-depth1{
+  position: relative;
+  display: block;
+}
+.about-depth1 li{
+  position: relative;
+  display: block;
+}
+.about-depth1 li a{
+  position: relative;
+  display: block;
+}
+.about-right{
+  position: relative;
+  display: block;
+}
+.my-picture{
+  position: relative;
+  display: block;
+}
+.my-picture img{
+  position: relative;
+  display: block;
+}
+/* life */
+.life{
+  position: relative;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.life-container{
+  position: relative;
+  display: block;
+}
+.life-me{
+  position: relative;
+  display: block;
+}
+.life-wrap{
+  position: relative;
+  display: block;
+}
+.life-list{
+  position: relative;
+  display: block;
+}
+.life-list tr{
+  position: relative;
+  display: block;
+}
+.life-list td{}
+/* portfolio */
+
+/* skill */
+
+/* contact */
+
+/* footer */
