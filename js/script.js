@@ -6,10 +6,11 @@ $(document).ready(function(){
             y: 0,
             stagger: 0.1
         })
-    }, 2000)
+    }, 1000)
     
 })
 
 window.onload = function(){
+    AOS.init();
 
 }
