@@ -1,238 +1,468 @@
-@charset "utf-8";
+  @charset "utf-8";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  img {
+    vertical-align: middle;
+    border: 0;
+  }
+
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-family: 'JSDongkang-Regular', 'Poppins', 'Graduate', 'Montserrat', 'Ephesis', 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.64px;
+    color: #444;
+    overflow-x: hidden;
+    background-color: lightgray;
+  }
+
+  /* 공통요소 */
+  .clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+  }
+
+  .inner {
+    position: relative;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* wrap */
+  .wrap {
+    position: relative;
+    display: block;
+  }
+
+  /* header */
+  .header {
+    position: relative;
+    display: block;
+    height: 80px;
+    padding: 0 60px;
+  }
+
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    position: relative;
+    display: block;
+  }
+
+  .nav-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .depth1 {
+    position: relative;
+    display: block;
+  }
+
+  .depth1 li {
+    position: relative;
+    display: inline-block;
+  }
+
+  .depth1 li a {
+    position: relative;
+    display: block;
+    margin: 0 10px;
+  }
+
+  .header-btn {
+    position: relative;
+    display: block;
+  }
+
+  .header-btn a {
+    position: relative;
+    display: block;
+  }
+
+  /* introduce */
+  .introduce {
+    position: relative;
+    display: block;
+    height: 100vh;
+  }
+
+  .intro-container {
+    position: relative;
+    display: block;
+  }
+
+  .intro-txt {
+    position: relative;
+    display: block;
+    width: 60%;
+    font-family: 'Poppins';
+    z-index: 999;
+
+  }
+
+  .intro-pic {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 500px;
+    height: 100vh;
+  }
+
+  .intro-pic img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .split span {
+    opacity: 0;
+    display: inline-block;
+    min-width: 1vw;
+    transform: translateY(30px);
+  }
+
+  /* about */
+  .about {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+
+  .about-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .about-me::before {
+    content: '01.';
+    position: relative;
+    display: inline-block;
+    color: blue;
+  }
+
+  .about-me::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: blue;
+  }
+
+
+  .about-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+  }
+
+  .about-left {
+    position: relative;
+    display: block;
+  }
+
+  .about-desc {
+    position: relative;
+    display: block;
+  }
+
+  .about-right {
+    position: relative;
+    display: block;
+  }
+
+  .my-picture {
+    position: relative;
+    display: block;
+    width: 400px;
+    height: 400px;
+  }
+
+  .my-picture::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .my-picture img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  /* skill */
+  .skill{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .myskill {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .myskill::before {
+    content: '03.';
+    position: relative;
+    display: inline-block;
+    color: blue;
+  }
+
+  .myskill::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: blue;
+  }
+
+
+  /* mbti */
+  .mbti{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .mymbti {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .mymbti::before {
+    content: '04.';
+    position: relative;
+    display: inline-block;
+    color: blue;
+  }
+
+  .mymbti::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: blue;
+  }
+
+  /* portfolio */
+  .portfolio{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .myportfolio {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .myportfolio::before {
+    content: '05.';
+    position: relative;
+    display: inline-block;
+    color: blue;
+  }
+
+  .myportfolio::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: blue;
+  }
+
+  .project-wrapper{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+  .project-wrap{
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
 }
 
-ul,
-li {
-  list-style: none;
+.project-img{
+  position: relative;
+  display: block;
 }
+  .project-content{
+    position: absolute;
+    right: 140px;
+    top: 47px;
+    display: block;
+    text-align: right;
+  }
+  
+  .portimg{
+    width: 700px;
+    display: block;
+    height: 300px;
+  }
 
-a {
-  color: #333;
-  text-decoration: none;
-}
+  .portimg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  .portimg img:hover{
+    opacity: 1;
+  }
 
-img {
-  vertical-align: middle;
-  border: 0;
-}
+  .project-desc{
+    position: relative;
+    display: block;
+    width: 400px;
+    border: 1px solid red;
+  }
+  /* life */
+  .life {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+  }
 
-html {
-  font-size: 16px;
-}
+  .life-container {
+    position: relative;
+    display: block;
+  }
 
-body {
-  font-family: 'JSDongkang-Regular' ,'Poppins', 'Graduate', 'Montserrat', 'Ephesis', 'Noto Sans KR', Helvetica, '맑은 고딕', 'malgun gothic', 'Apple SD Gothic Neo', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.4;
-  letter-spacing: -0.64px;
-  color: #444;
-  overflow-x: hidden;
-}
-/* 공통요소 */
-.clearfix::after {
-  content: '';
-  position: relative;
-  display: block;
-  width: 100%;
-  clear: both;
-}
-
-.inner {
-  position: relative;
-  display: block;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* wrap */
-.wrap{
-  position: relative;
-  display: block;
-}
-/* header */
-.header{
-  position: relative;
-  display: block;
-  height: 80px;
-  padding: 0 60px;
-}
-.nav{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-.logo{
-  position: relative;
-  display: block;
-}
-.nav-container{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-.depth1{
-  position: relative;
-  display: block;
-}
-.depth1 li{
-  position: relative;
-  display: inline-block;
-}
-.depth1 li a{
-  position: relative;
-  display: block;
-  margin: 0 10px;
-}
-.header-btn{
-  position: relative;
-  display: block;
-}
-.header-btn a{
-  position: relative;
-  display: block;
-}
-/* introduce */
-.introduce{
-  position: relative;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-.intro-container{
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 60px;
-}
-.intro-txt{
-  position: relative;
-  display: block;
-  width: 60%;
-  font-family: 'Poppins';
-  z-index: 999;
-
-}
-.intro-txt h2{
-  font-size: 6vw;
-  line-height: 1.2;
-}
-.intro-txt h2 strong{
-  position: relative;
-  display: block;
-  font-weight: 900;
+  .life-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
   white-space: nowrap;
 }
-.intro-desc{
-  position: relative;
-  display: block;
-  font-size: 1.2vw;
-  font-family: 'JSDongkang-Regular';
-  font-weight: 500;
-  line-height: 2;
-  margin-top: 120px;
 
-}
-.intro-pic{
+.life-me::before {
+  content: '06.';
   position: relative;
-  display: block;
+  display: inline-block;
+  color: blue;
 }
 
-.intro-pic img{
+.life-me::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: blue;
+}
+
+
+.life-me-title{
   position: relative;
   display: block;
   width: 100%;
-  height: 100vh;
-  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  margin: 80px 0 40px 0;
 }
 
-.split span {
-  opacity: 0;
+.life-box{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.life-card{
+  position: relative;
   display: inline-block;
-  min-width: 1vw;
-  transform: translateY(30px);
+  width: 270px;
+  height: 400px;
 }
-/* about */
-.about{
+.life-card img{
   position: relative;
   display: block;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 }
-.about-me{
-  position: relative;
-  display: block;
-}
-.about-left{
-  position: relative;
-  display: block;
-}
-.about-desc{
-  position: relative;
-  display: block;
-}
-.about-depth1{
-  position: relative;
-  display: block;
-}
-.about-depth1 li{
-  position: relative;
-  display: block;
-}
-.about-depth1 li a{
-  position: relative;
-  display: block;
-}
-.about-right{
-  position: relative;
-  display: block;
-}
-.my-picture{
-  position: relative;
-  display: block;
-}
-.my-picture img{
-  position: relative;
-  display: block;
-}
-/* life */
-.life{
-  position: relative;
-  display: block;
-  width: 100vw;
-  height: 100vh;
-}
-.life-container{
-  position: relative;
-  display: block;
-}
-.life-me{
-  position: relative;
-  display: block;
-}
-.life-wrap{
-  position: relative;
-  display: block;
-}
-.life-list{
-  position: relative;
-  display: block;
-}
-.life-list tr{
-  position: relative;
-  display: block;
-}
-.life-list td{}
-/* portfolio */
 
-/* skill */
+
 
 /* contact */
 
