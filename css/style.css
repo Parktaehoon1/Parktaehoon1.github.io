@@ -122,7 +122,7 @@
     transition: all 0.3s;
   }
 
-  .depth1 li a::after {
+  .depth1 > li::after {
     content: "";
     position: absolute;
     left: 0;
@@ -137,7 +137,7 @@
     color: aqua;
   }
 
-  .depth1 li:hover .depth1 li a::after {
+  .depth1 li a:hover .depth1 > li::after {
     content: "";
     position: absolute;
     left: 0;
@@ -417,8 +417,18 @@
 
   .project-wrap {
     position: relative;
-    display: block;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: start;
+    margin-bottom: 50px;
+  }
+
+  .project-wrap:nth-child(2){
+    display: flex;
+    justify-content: center;
+  }
+  .project-wrap:nth-child(3){
+    display: flex;
+    justify-content: start;
   }
 
   .project-img {
@@ -427,15 +437,15 @@
   }
 
   .project-content {
-    position: absolute;
-    right: 140px;
-    top: 47px;
+    position: relative;
+    right: 20px;
+    top: 20px;
     display: block;
     text-align: right;
   }
 
   .portimg {
-    width: 700px;
+    width: 500px;
     display: block;
     height: 300px;
   }
@@ -456,7 +466,8 @@
   .project-desc {
     position: relative;
     display: block;
-    width: 400px;
+    width: 450px;
+    background-color: lightgreen;
     border: 1px solid red;
   }
 
@@ -488,8 +499,13 @@
   .portfolio-list li {
     position: relative;
     display: block;
-    margin: 10px 10px;
+    margin: 20px 10px;
     text-align: center;
+  }
+  .portfolio-list li h5{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
   }
   .portfolio-list-wrap{
     position: relative;
