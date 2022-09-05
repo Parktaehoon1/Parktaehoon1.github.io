@@ -30,7 +30,9 @@
     integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"
+    integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!--[if lt IE 9]> 
     <script src="js/html5shiv.js"></script>
   <![endif]-->
@@ -42,8 +44,8 @@
   <link rel="stylesheet" href="css/font.css">
   <link href="js/aos/aos.css" rel="stylesheet">
   <script src="js/aos/aos.js"></script>
-   <!-- waypoint -->
-   <script src="js/jquery.waypoints.js"></script>
+  <!-- waypoint -->
+  <script src="js/jquery.waypoints.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <!-- Progressbar 관련 -->
   <script type="text/javascript" src="js/progressbar/progressbar.js"></script>
@@ -58,14 +60,17 @@
         <a href="#" class="logo">로고</a>
         <div class="nav-container">
           <ul class="depth1">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#mbti">Mbti</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#life">Life</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="https://github.com/Parktaehoon1" target="_blank">Github</a></li>
+            <li><a href="https://www.figma.com/file/o2DapMxRZaG5kQUhb8a0NM/miniblog" target="_blank">Figma</a></li>
+            <li><a href="박태훈.pdf">Download</a></li>
           </ul>
-          <div class="header-btn">
-            <a href="#">Resume</a>
-          </div>
         </div>
       </nav>
     </header>
@@ -75,228 +80,392 @@
         <div class="intro-txt">
           <p>꾸준하게 발전하는</p>
           <p>FE개발자<span>박태훈</span>입니다.</p>
-          <p></p>
+          <p class="intro-desc">사람구실할수있게 꼭 뽑아주십시오. 사나이 박태훈 은혜는 잊지 않습니다.</p>
         </div>
         <div class="intro-pic">
           <!-- <img src="images/my_profile.png" alt=""> -->
           <img src="http://placeimg.com/640/480/any" alt="">
         </div>
       </div>
-  </div>
-  </section>
-  <section class="about">
-    <div class="inner">
-      <h2 class="about-me">About Me</h2>
-      <div class="about-wrapper">
-        <div class="about-left">
-          <div class="about-desc">
-            <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
-              development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking
-              together a custom reblog button taught me a lot about HTML & CSS!</p>
-            <p>1.<span>title1</span></p>
-            <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a
-              huge
-              corporation, and a student-led design studio. My main focus these days is building accessible, inclusive
-              products and digital experiences at Upstatement for a variety of clients.</p>
-            <p>2.<span>title2</span></p>
-            <p>I also recently launched a course that covers everything you need to build a web app with the Spotify
-              API
-              using Node & React.</p>
-            <p>3.<span>title3</span></p>
-            <p>Here are a few technologies I’ve been working with recently:</p>
-          </div>
-        </div>
-        <div class="about-right">
-          <div class="my-picture">
-            <!-- <img src="images/proofile.jpg" alt="대충"> -->
-            <img src="http://placeimg.com/640/480/any" alt="대충">
-          </div>
-        </div>
-        <!-- </div> -->
-
-      </div>
-  </section>
-
-  <section class="skill">
-    <div class="inner">
-      <h2 class="myskill">Skill</h2>
-      <div class="skill-container">
-        <h2 class="skill-title">최신 웹트렌드 따라가야됨</h2>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="mbti">
-    <div class="inner">
-      <h2 class="mymbti">My MBTI</h2>
-    </div>
-  </section>
-
-  <section class="portfolio">
-    <div class="inner">
-      <h2 class="myportfolio">My Portfolio</h2>
-      <div class="portfolio-container">
-        <div class="porject-wrapper">
-
-          <div class="project-wrap ml30">
-            <div class="project-img">
-              <a href="#" class="portimg">
-                <!-- <img src="images/proofile.jpg" alt=""> -->
-                <img src="http://placeimg.com/640/480/any" alt="">
-              </a>
+    </section>  
+    <section class="about" id="about">
+      <div class="inner">
+        <h2 class="about-me">About Me</h2>
+        <div class="about-wrapper">
+          <div class="about-left">
+            <div class="about-desc">
+              <p>Hello! My name is Brittany and I enjoy creating things that live on the internet. My interest in web
+                development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking
+                together a custom reblog button taught me a lot about HTML & CSS!</p>
+              <p>1.<span>title1</span></p>
+              <p>Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a
+                huge
+                corporation, and a student-led design studio. My main focus these days is building accessible, inclusive
+                products and digital experiences at Upstatement for a variety of clients.</p>
+              <p>2.<span>title2</span></p>
+              <p>I also recently launched a course that covers everything you need to build a web app with the Spotify
+                API
+                using Node & React.</p>
+              <p>3.<span>title3</span></p>
+              <p>Here are a few technologies I’ve been working with recently:</p>
             </div>
-            <div class="project-content">
-              <div>
-                <p>Featured project</p>
-                <h3 class="project-title">
-                  <a href="#">todolistlink</a>
-                </h3>
-                <div class="project-desc">
-                  <p>가나다라마사바</p>
-                  <a href="#">박태훈(비포로밑줄)</a>
-                </div>
-                <ul class="project-tech-list">
-                  <li>a</li>
-                  <li>b</li>
-                  <li>c</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#">github</a>
-                  <a href="#">github2</a>
+          </div>
+          <div class="about-right">
+            <div class="my-picture">
+              <!-- <img src="images/proofile.jpg" alt="대충"> -->
+              <img src="http://placeimg.com/640/480/any" alt="대충">
+            </div>
+          </div>
+          <!-- </div> -->
+
+        </div>
+    </section>
+    <section class="skill" id="skill">
+      <div class="inner">
+        <h2 class="myskill">Skill</h2>
+        <div class="skill-container">
+          <h2 class="skill-title">최신 웹트렌드 따라가야됨</h2>
+
+        </div>
+      </div>
+    </section>
+    <section class="mbti" id="mbti">
+      <div class="inner">
+        <h2 class="mymbti">My MBTI</h2>
+      </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+      <div class="inner">
+        <h2 class="myportfolio">My Portfolio</h2>
+        <div class="portfolio-container">
+          <div class="project-wrapper">
+            <div class="project-wrap ml30">
+              <div class="project-img">
+                <a href="#" class="portimg">
+                  <!-- <img src="images/proofile.jpg" alt=""> -->
+                  <img src="http://placeimg.com/640/480/any" alt="">
+                </a>
+              </div>
+              <div class="project-content">
+                <div>
+                  <p>Featured project</p>
+                  <h3 class="project-title">
+                    <a href="#">todolistlink</a>
+                  </h3>
+                  <div class="project-desc">
+                    <p>가나다라마사바</p>
+                    <a href="#">박태훈(비포로밑줄)</a>
+                  </div>
+                  <ul class="project-tech-list">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                  </ul>
+                  <div class="project-link">
+                    <a href="#">github</a>
+                    <a href="#">github2</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="project-wrap">
-            <div class="project-img">
-              <a href="#" class="portimg">
-                <!-- <img src="images/proofile.jpg" alt=""> -->
-                <img src="http://placeimg.com/640/480/any" alt="">
-              </a>
-            </div>
-            <div class="project-content">
-              <div>
-                <p>Featured project</p>
-                <h3 class="project-title">
-                  <a href="#">todolistlink</a>
-                </h3>
-                <div class="project-desc">
-                  <p>가나다라마사바</p>
-                  <a href="#">박태훈(비포로밑줄)</a>
-                </div>
-                <ul class="project-tech-list">
-                  <li>a</li>
-                  <li>b</li>
-                  <li>c</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#">github</a>
-                  <a href="#">github2</a>
+            <div class="project-wrap">
+              <div class="project-img">
+                <a href="#" class="portimg">
+                  <!-- <img src="images/proofile.jpg" alt=""> -->
+                  <img src="http://placeimg.com/640/480/any" alt="">
+                </a>
+              </div>
+              <div class="project-content">
+                <div>
+                  <p>Featured project</p>
+                  <h3 class="project-title">
+                    <a href="#">todolistlink</a>
+                  </h3>
+                  <div class="project-desc">
+                    <p>가나다라마사바</p>
+                    <a href="#">박태훈(비포로밑줄)</a>
+                  </div>
+                  <ul class="project-tech-list">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                  </ul>
+                  <div class="project-link">
+                    <a href="#">github</a>
+                    <a href="#">github2</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="project-wrap mr30">
-            <div class="project-img">
-              <a href="#" class="portimg">
-                <!-- <img src="images/proofile.jpg" alt=""> -->
-                <img src="http://placeimg.com/640/480/any" alt="">
-              </a>
-            </div>
-            <div class="project-content">
-              <div>
-                <p>Featured project</p>
-                <h3 class="project-title">
-                  <a href="#">todolistlink</a>
-                </h3>
-                <div class="project-desc">
-                  <p>가나다라마사바</p>
-                  <a href="#">박태훈(비포로밑줄)</a>
-                </div>
-                <ul class="project-tech-list">
-                  <li>a</li>
-                  <li>b</li>
-                  <li>c</li>
-                </ul>
-                <div class="project-link">
-                  <a href="#">github</a>
-                  <a href="#">github2</a>
+            <div class="project-wrap mr30">
+              <div class="project-img">
+                <a href="#" class="portimg">
+                  <!-- <img src="images/proofile.jpg" alt=""> -->
+                  <img src="http://placeimg.com/640/480/any" alt="">
+                </a>
+              </div>
+              <div class="project-content">
+                <div>
+                  <p>Featured project</p>
+                  <h3 class="project-title">
+                    <a href="#">todolistlink</a>
+                  </h3>
+                  <div class="project-desc">
+                    <p>가나다라마사바</p>
+                    <a href="#">박태훈(비포로밑줄)</a>
+                  </div>
+                  <ul class="project-tech-list">
+                    <li>a</li>
+                    <li>b</li>
+                    <li>c</li>
+                  </ul>
+                  <div class="project-link">
+                    <a href="#">github</a>
+                    <a href="#">github2</a>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div class="portfolio-wrap">
+              <h3 class="project-list-title">Publishong Clone Coding</h3>
+              <div class="portfolio-cate">
+                <h4>Personal Clone</h4>
+                <ul class="portfolio-list">
+                  <li>
+                    <h5>도시락통(PC/Mobile)</h5>  <!-- 아이콘으로 하는게 나을듯-->
+                    <a href="깃허브페이지주소" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="깃허브page주소" target="_blank">work</a>
+                        <a href="깃허브주소" target="_blank">github</a>
+                        <a href="원주소" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <h5>오픈서베이</h5>
+                    <a href="깃허브페이지주소" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="깃허브page주소" target="_blank">work</a>
+                        <a href="깃허브주소" target="_blank">github</a>
+                        <a href="원주소" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <h5>배민문방구</h5>
+                    <a href="깃허브페이지주소" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="깃허브page주소" target="_blank">work</a>
+                        <a href="깃허브주소" target="_blank">github</a>
+                        <a href="원주소" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <h5>쉐프원</h5>
+                    <a href="깃허브페이지주소" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="깃허브page주소" target="_blank">work</a>
+                        <a href="깃허브주소" target="_blank">github</a>
+                        <a href="원주소" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <h5>정육각</h5>
+                    <a href="깃허브페이지주소" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="깃허브page주소" target="_blank">work</a>
+                        <a href="깃허브주소" target="_blank">github</a>
+                        <a href="원주소" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-cate">
+                <h4>Study Clone</h4>
+                <ul class="portfolio-list">
+                  <li>
+                    <h5>K-water(PC/Mobile)</h5>  <!-- 아이콘으로 하는게 나을듯-->
+                    <a href="https://parktaehoon1.github.io/kwater/" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="https://parktaehoon1.github.io/kwater/" target="_blank">work</a>
+                        <a href="https://github.com/Parktaehoon1/kwater" target="_blank">github</a>
+                        <a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <h5>거제청년센터 이룸(PC/Mobile/Vue.js)</h5>
+                    <a href="https://parktaehoon1.github.io/geojeyouth/" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="https://parktaehoon1.github.io/geojeyouth/" target="_blank">work</a>
+                        <a href="https://github.com/Parktaehoon1/geojeyouth" target="_blank">github</a>
+
+                        <a href="깃허브 Vue.js page주소" target="_blank">work</a>
+                        <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+
+                        <a href="https://geojeyouth.com/web/" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <h5>노엘로힐스(PC/Mobile/Vue.js)</h5>
+                    <a href="https://parktaehoon1.github.io/noelohills/" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="https://parktaehoon1.github.io/noelohills/" target="_blank">work</a>
+                        <a href="https://github.com/Parktaehoon1/noelohills" target="_blank">github</a>
+
+                        <a href="깃허브 Vue.js page주소" target="_blank">work</a>
+                        <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                        
+                        <a href="https://noelohills.com/" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <h5>마시그레이(PC/Mobile/Vue.js)</h5>
+                    <a href="https://parktaehoon1.github.io/masigray/" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="https://parktaehoon1.github.io/masigray/" target="_blank">work</a>
+                        <a href="깃허브주소" target="_blank">github</a>
+
+                        <a href="깃허브 Vue.js page주소" target="_blank">work</a>
+                        <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                        
+                        <a href="https://www.masigray.com:5021/main/main.asp" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <h5>STX(PC/Vue.js)</h5>
+                    <a href="https://parktaehoon1.github.io/stxconst/" target="_blank">
+                      <img src="http://placeimg.com/270/270/any" alt="">
+                      <div>
+                        <a href="https://parktaehoon1.github.io/stxconst/" target="_blank">work</a>
+                        <a href="https://github.com/Parktaehoon1/stxconst" target="_blank">github</a>
+
+                        <a href="깃허브 Vue.js page주소" target="_blank">work</a>
+                        <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                        
+                        <a href="원주소" target="_blank">origin</a>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio-wrap">
+              <h3 class="project-list-title">Vue.js Coding</h3>
+              <div class="portfolio-cate">
+                <h4>study Vue.js</h4>
+                <ul class="portfolio-list">
+                  <li>
+                    <h5>MiniMemo(Vue.js)</h5>
+                    <p>프로젝트 설명</p>
+                    <a href="깃허브 Vue.js page주소" target="_blank">work</a>
+                    <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                    <a href="Figma 링크 주소" target="_blank">Figma</a>
+                  </li>
+                  <li>
+                    <h5>지브리스튜디오 API (Vue.js)</h5>
+                    <p>프로젝트 설명</p>
+                    <a href="깃허브 Vue.js page주소" target="_blank">work</a>
+                    <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                  </li>
+                  <li>
+                    <h5>TodoApp (Vue.js/php/MySQL)</h5>
+                    <p>프로젝트 설명</p>
+                    <a href="dothome 계정 주소" target="_blank">work</a>
+                    <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                  </li>
+                  <li>
+                    <h5>TodoApp (Vue.js/RESTFull( jsonServer ))</h5>
+                    <p>프로젝트 설명</p>
+                    <a href="dothome 계정 주소" target="_blank">work</a>
+                    <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="portfolio-wrap">
+              <h3 class="project-list-title">ETC</h3>
+            </div>
+
+
+            <!-- <div class="project-list">
+            <div>
+              <img src="http://placeimg.com/270/270/any" alt="">
+            </div>
+            <div>
+              <img src="http://placeimg.com/270/270/any" alt="">
+            </div>
+            <div>
+              <img src="http://placeimg.com/270/270/any" alt="">
+            </div>
+            <div>
+              <img src="http://placeimg.com/270/270/any" alt="">
+            </div>
+            <div>
+              <img src="http://placeimg.com/270/270/any" alt="">
+            </div>
+            <div>
+              <img src="http://placeimg.com/270/270/any" alt="">
+            </div>
+            <div>
+              <img src="http://placeimg.com/270/270/any" alt="">
+            </div>
+            <div>
+              <img src="http://placeimg.com/270/270/any" alt="">
+            </div>
+          </div> -->
           </div>
-
-
-          <div class="project-list-title">project list title</div>
-          <div class="project-list">
-            <div>
-              <img src="http://placeimg.com/270/270/any" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="life" id="life">
+      <div class="inner">
+        <div class="life-container">
+          <h2 class="life-me">My Life</h2>
+          <div class="life-me-title">저는 이런 사람입니다:)</div>
+          <div class="life-box">
+            <div class="life-card">
+              <!-- <img src="images/proofile.jpg" alt=""> -->
+              <img src="http://placeimg.com/640/480/any" alt="">
             </div>
-            <div>
-              <img src="http://placeimg.com/270/270/any" alt="">
+            <div class="life-card">
+              <!-- <img src="images/proofile.jpg" alt=""> -->
+              <img src="http://placeimg.com/640/480/any" alt="">
             </div>
-            <div>
-              <img src="http://placeimg.com/270/270/any" alt="">
+            <div class="life-card">
+              <!-- <img src="images/proofile.jpg" alt=""> -->
+              <img src="http://placeimg.com/640/480/any" alt="">
             </div>
-            <div>
-              <img src="http://placeimg.com/270/270/any" alt="">
-            </div>
-            <div>
-              <img src="http://placeimg.com/270/270/any" alt="">
-            </div>
-            <div>
-              <img src="http://placeimg.com/270/270/any" alt="">
-            </div>
-            <div>
-              <img src="http://placeimg.com/270/270/any" alt="">
-            </div>
-            <div>
-              <img src="http://placeimg.com/270/270/any" alt="">
+            <div class="life-card">
+              <!-- <img src="images/proofile.jpg" alt=""> -->
+              <img src="http://placeimg.com/640/480/any" alt="">
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-
-  <section class="life">
-    <div class="inner">
-      <div class="life-container">
-        <h2 class="life-me">My Life</h2>
-        <div class="life-me-title">저는 이런 사람입니다:)</div>
-        <div class="life-box">
-          <div class="life-card">
-            <!-- <img src="images/proofile.jpg" alt=""> -->
-            <img src="http://placeimg.com/640/480/any" alt="">
-          </div>
-          <div class="life-card">
-            <!-- <img src="images/proofile.jpg" alt=""> -->
-            <img src="http://placeimg.com/640/480/any" alt="">
-          </div>
-          <div class="life-card">
-            <!-- <img src="images/proofile.jpg" alt=""> -->
-            <img src="http://placeimg.com/640/480/any" alt="">
-          </div>
-          <div class="life-card">
-            <!-- <img src="images/proofile.jpg" alt=""> -->
-            <img src="http://placeimg.com/640/480/any" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact">
-    <div class="inner"></div>
-  </section>
-  <footer class="footer">
-    <div class="inner"></div>
-  </footer>
+    </section>
+    <section class="contact" id="contact">
+      <div class="inner"></div>
+    </section>
+    <footer class="footer">
+      <div class="inner"></div>
+    </footer>
   </div>
 </body>
 

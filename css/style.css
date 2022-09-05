@@ -66,21 +66,32 @@
 
   /* header */
   .header {
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 20px;
     display: block;
+    width: 100%;
     height: 80px;
     padding: 0 60px;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
   }
 
   .nav {
     position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 80px;
   }
 
   .logo {
     position: relative;
     display: block;
+    font-size: 16px;
+    color: #fff;
   }
 
   .nav-container {
@@ -99,11 +110,42 @@
     display: inline-block;
   }
 
-  .depth1 li a {
+  .depth1 li a{
     position: relative;
     display: block;
     margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s;
   }
+
+  .depth1 > li > a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    transition: width 0.5s;
+  }
+
+  .depth1 li a:hover{
+    color: aqua;
+  }
+
+  .depth1 li:hover .depth1 > li > a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100% !important; 
+    height: 2px;
+    background-color: red;
+    /* transition: width 0.5s; */
+  }
+  
 
   .header-btn {
     position: relative;
@@ -139,15 +181,23 @@
     font-family: 'Poppins';
     z-index: 999;
     font-size: 60px;
+    font-weight: 700;
   }
 
+  .intro-desc {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+  }
   .intro-pic {
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 0;
     display: block;
     width: 600px;
-    height: 100vh;
+    height: 100%;
+    padding-top: 100px;
   }
 
   .intro-pic img {
@@ -273,7 +323,7 @@
     content: '03.';
     position: relative;
     display: inline-block;
-    color: #000;
+    color: #fff;
   }
 
   .myskill::after {
@@ -283,7 +333,7 @@
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #000;
+    background-color: #fff;
   }
 
 
@@ -309,7 +359,7 @@
     content: '04.';
     position: relative;
     display: inline-block;
-    color: #000;
+    color: #fff;
   }
 
   .mymbti::after {
@@ -319,7 +369,7 @@
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #000;
+    background-color: #fff;
   }
 
   /* portfolio */
@@ -344,7 +394,7 @@
     content: '05.';
     position: relative;
     display: inline-block;
-    color: #000;
+    color: #fff;
   }
 
   .myportfolio::after {
@@ -354,7 +404,7 @@
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #000;
+    background-color: #fff;
   }
 
   .project-wrapper{
@@ -415,6 +465,18 @@
     margin: 10px 0;
   }
 
+  .portfolio-list{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .portfolio-list > li {
+    position: relative;
+    display: block;
+    margin: 10px 10px;
+    text-align: center;
+  }
   /* life */
   .life {
     position: relative;
@@ -442,7 +504,7 @@
   content: '06.';
   position: relative;
   display: inline-block;
-  color: #000;
+  color: #fff;
 }
 
 .life-me::after {
@@ -452,7 +514,7 @@
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #000;
+  background-color: #fff;
 }
 
 
