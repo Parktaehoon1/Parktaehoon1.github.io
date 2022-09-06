@@ -66,6 +66,9 @@
     display: block;
   }
 
+  .scrolltop{
+    padding-top: 100px;
+  }
   /* header */
   .header {
     position: fixed;
@@ -216,7 +219,7 @@
     min-width: 1vw;
     transform: translateY(30px);
   }
-
+  
   /* about */
   .about {
     position: relative;
