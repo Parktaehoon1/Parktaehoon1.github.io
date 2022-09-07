@@ -1,14 +1,38 @@
 $(document).ready(function () {
-//jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $(document).on('click', 'a.page-scroll', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
+    // sns창 나오게하기
+
+    let snsWrap = $('.sns-list');
+
+    let scY = $(window).scrollTop();
+    $(window).scroll(function(){
+        // 현재 스크롤바의 위치
+
+        let temp = snsWrap.offset().top;
+        console.log(temp)
+        if(temp > 600) {
+                snsWrap.css({'opacity': '1' , "visibility": "visible"});
+            // snsWrap.show()
+            }else if(temp < 600){
+                snsWrap.css({'opacity': '0' , "visibility": "hidden"});
+            // snsWrap.hide()
+            }
+
+        }
+    )
+
+
+
+
+    //jQuery for page scrolling feature - requires jQuery Easing plugin
+    $(function () {
+        $(document).on('click', 'a.page-scroll', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
     });
-});
 
     setTimeout(function () {
         gsap.to(".split span", {
@@ -64,7 +88,7 @@ window.onload = function () {
     //         })
     //     })
     // })
-    
+
 
 
 

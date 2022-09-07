@@ -59,6 +59,32 @@
 </head>
 
 <body>
+  <aside class="sns">
+    <div class="sns-container">
+      <ul class="sns-list">
+        <li>
+          <a href="https://github.com/Parktaehoon1" target="_blank" class="snsicon">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:92parkth@gmail.com" class="snsicon">
+            <i class="fa fa-envelope-open"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://parktaehoon.dothome.co.kr/" class="snsicon">
+            <i class="fas fa-map"></i>
+          </a>
+        </li>
+        <li>
+          <a href="박태훈.pdf" class="snsicon">
+            <i class="fa fa-book"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
   <div class="wrap">
     <header class="header">
       <nav class="nav">
@@ -72,10 +98,11 @@
             <li><a href="#portfolio" class="mainmenu page-scroll"><span>05.</span>Portfolio</a></li>
             <li><a href="#life" class="mainmenu page-scroll"><span>06.</span>Life</a></li>
             <li><a href="#contact" class="mainmenu page-scroll"><span>07.</span>Contact</a></li>
-            <li><a href="https://github.com/Parktaehoon1" target="_blank" class="mainmenu page-scroll"><span>08.</span>Github</a></li>
+            <!-- <li><a href="https://github.com/Parktaehoon1" target="_blank"
+                class="mainmenu page-scroll"><span>08.</span>Github</a></li>
             <li><a href="https://www.figma.com/file/o2DapMxRZaG5kQUhb8a0NM/miniblog" target="_blank"
                 class="mainmenu page-scroll"><span>09.</span>Figma</a></li>
-            <li><a href="박태훈.pdf" class="mainmenu page-scroll">Download</a></li>
+            <li><a href="박태훈.pdf" class="mainmenu page-scroll">Download</a></li> -->
           </ul>
         </div>
       </nav>
@@ -95,7 +122,7 @@
       </div>
     </section>
     <section class="about scrolltop" id="about">
-      <div class="inner"  data-aos="fade-up" data-aos-duration="3000">
+      <div class="inner" data-aos="fade-up" data-aos-duration="3000">
         <h2 class="about-me">About Me</h2>
         <div class="about-wrapper">
           <div class="about-left">
@@ -127,7 +154,7 @@
         </div>
     </section>
     <section class="skill scrolltop" id="skill">
-      <div class="inner"  data-aos="fade-up" data-aos-duration="3000">
+      <div class="inner" data-aos="fade-up" data-aos-duration="3000">
         <h2 class="myskill">Skill</h2>
         <div class="skill-container">
           <h2 class="skill-title">최신 웹트렌드 따라가야됨</h2>
@@ -161,7 +188,7 @@
               </div>
             </li>
             <li>
-              <i class=" fab fa-vuejs skillicon" style="color: rgb(40, 241, 198);"></i>
+              <i class="fab fa-vuejs skillicon" style="color: rgb(40, 241, 198);"></i>
               <div class="skill-desc">
                 <span class="vue">100</span><span>%</span>
                 <p>Vue.js</p>
@@ -193,7 +220,7 @@
       </div>
     </section>
     <section class="mbti scrolltop" id="mbti">
-      <div class="inner" data-aos="fade-up" data-aos-duration="3000" >
+      <div class="inner" data-aos="fade-up" data-aos-duration="3000">
         <h2 class="mymbti">My MBTI</h2>
       </div>
     </section>
@@ -211,22 +238,27 @@
               </div>
               <div class="project-content">
                 <div>
-                  <p>Featured project</p>
+                  <p class="project-name">TODO LIST</p>
                   <h3 class="project-title">
-                    <a href="#">todolistlink</a>
+                    <a href="#">Vue.js</a>
                   </h3>
                   <div class="project-desc">
                     <p>가나다라마사바</p>
                     <a href="#">박태훈(비포로밑줄)</a>
                   </div>
                   <ul class="project-tech-list">
-                    <li>a</li>
-                    <li>b</li>
-                    <li>c</li>
+                    <li>로그인 기능 추가로 ~~</li>
+                    <li>댓글 기능 추가로 ~~</li>
+                    <li>우선순위 기능 추가로 ~~</li>
                   </ul>
                   <div class="project-link">
-                    <a href="#">github</a>
-                    <a href="#">github2</a>
+                    <p class="useskill">사용기술</p>
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                    <a href="#">Jquery</a>
+                    <a href="#">Javascript</a>
+                    <a href="#">vue.js</a>
+                    <a href="#">php</a>
                   </div>
                 </div>
               </div>
@@ -296,16 +328,39 @@
                 <h4>Personal Clone</h4>
                 <ul class="portfolio-list">
                   <li>
-                    <h5>도시락통(PC/Mobile) 모달이미지안들어가있음 수정하셈 본인</h5>
+                    <h5>도시락통(PC/Mobile)</h5>
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/dosiraktong/" target="_blank">
-                        <img src="http://placeimg.com/270/270/any" alt="더미 이미지">
+                        <img src="images/dosirak.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/dosiraktong/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/dosiraktong" target="_blank">github</a>
-                          <a href="https://www.dosiraktong.com" target="_blank">origin</a>
+                          <span class="port-title">도시락통</span>
+
+                          <div class="port-desc">
+                            <p class="port-version">
+                              <!-- <i class="fas fa-desktop"></i> -->
+                              <!-- <span class="pcmobile">/</span> -->
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">도시락통</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/dosiraktong/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/dosiraktong" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
+                            <a href="https://www.dosiraktong.com" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -314,14 +369,34 @@
                     <h5>오픈서베이</h5>
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/opensurvey/" target="_blank" class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/opensurvey.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/opensurvey/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/opensurvey" target="_blank">github</a>
-                          <a href="https://www.opensurvey.co.kr/?gclid=Cj0KCQjwmdGYBhDRARIsABmSEePQ7gm3oWxgjfmJUV0odfwQVPL6MVTUMsLDnE_6xwoB7mmcpKLTk5MaAgKuEALw_wcB"
-                            target="_blank">origin</a>
+                          <span class="port-title">오픈서베이</span>
+                          <div class="port-desc">
+                            <p class="port-version">
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">오픈서베이</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/opensurvey/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/opensurvey" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
+                            <a href="https://www.opensurvey.co.kr/?gclid=Cj0KCQjwmdGYBhDRARIsABmSEePQ7gm3oWxgjfmJUV0odfwQVPL6MVTUMsLDnE_6xwoB7mmcpKLTk5MaAgKuEALw_wcB"
+                              target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -330,28 +405,68 @@
                     <h5>배민문방구</h5>
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/bamin/" target="_blank" class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/baemin.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/bamin/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/bamin" target="_blank">github</a>
-                          <a href="https://brandstore.baemin.com/" target="_blank">origin</a>
+                          <span class="port-title">배민문방구</span>
+                          <div class="port-desc">
+                            <p class="port-version">
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">배민문방구</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/bamin/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/bamin" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
+                            <a href="https://brandstore.baemin.com/" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </li>
                   <li>
-                    <h5>쉐프원 / 헤더 작업해야됨 까먹지말자</h5>
+                    <h5>쉐프원</h5>
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/chef1scss/" target="_blank" class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/chefone.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/chef1scss/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/chef1scss" target="_blank">github</a>
-                          <a href="https://www.chef1.co.kr/" target="_blank">origin</a>
+                          <span class="port-title">쉐프원</span>
+                          <div class="port-desc">
+                            <p class="port-version">
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">쉐프원</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/chef1scss/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/chef1scss" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
+                            <a href="https://www.chef1.co.kr/" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -361,13 +476,33 @@
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/jeungyookgak/" target="_blank"
                         class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/jungyuk.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/jeungyookgak/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/jeungyookgak" target="_blank">github</a>
-                          <a href="https://www.jeongyookgak.com/" target="_blank">origin</a>
+                          <span class="port-title">정육각</span>
+                          <div class="port-desc">
+                            <p class="port-version">
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">정육각</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/jeungyookgak/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/jeungyookgak" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
+                            <a href="https://www.jeongyookgak.com/" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -383,13 +518,33 @@
                     <h5>K-water(PC/Mobile)</h5> <!-- 아이콘으로 하는게 나을듯-->
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/kwater/" target="_blank" class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/kwater.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/kwater/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/kwater" target="_blank">github</a>
-                          <a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank">origin</a>
+                          <span class="port-title">K-water</span>
+                          <div class="port-desc">
+                            <p class="port-version">
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">K-water</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/kwater/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/kwater" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
+                            <a href="https://www.kwater.or.kr/main.do?s_mid=1" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -399,17 +554,39 @@
                     <div class="portfolio-list-wrap">
 
                       <a href="https://parktaehoon1.github.io/geojeyouth/" target="_blank" class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/geoje.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/geojeyouth/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/geojeyouth" target="_blank">github</a>
+                          <span class="port-title">거제청년센터 이룸</span>
+                          <div class="port-desc">
+                            <p class="port-version">
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">거제청년센터 이룸</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/geojeyouth/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/geojeyouth" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
+                            <a href="깃허브 Vue.js page주소" target="_blank">
+                              <i class="fab fa-vuejs"></i>
+                              Vue.js</a>
+                            <a href="깃허브 Vue.js 주소" target="_blank">
+                              github</a>
 
-                          <a href="깃허브 Vue.js page주소" target="_blank">work</a>
-                          <a href="깃허브 Vue.js 주소" target="_blank">github</a>
-
-                          <a href="https://geojeyouth.com/web/" target="_blank">origin</a>
+                            <a href="https://geojeyouth.com/web/" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -418,17 +595,39 @@
                     <h5>노엘로힐스(PC/Mobile/Vue.js)</h5>
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/noelohills/" target="_blank" class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/noelo.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/noelohills/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/noelohills" target="_blank">github</a>
+                          <span class="port-title">노엘로힐스</span>
+                          <div class="port-desc">
+                            <p class="port-version">
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">노엘로힐스</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/noelohills/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/noelohills" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
 
-                          <a href="https://parktaehoon1.github.io/page-noelohills/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/page-noelohills" target="_blank">Vue버전</a>
+                            <a href="https://parktaehoon1.github.io/page-noelohills/" target="_blank">work</a>
+                            <a href="https://github.com/Parktaehoon1/page-noelohills" target="_blank">
+                              <i class="fab fa-vuejs"></i>
+                              Vue.js</a>
 
-                          <a href="https://noelohills.com/" target="_blank">origin</a>
+                            <a href="https://noelohills.com/" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -437,17 +636,40 @@
                     <h5>마시그레이(PC/Mobile/Vue.js)</h5>
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/masigray/" target="_blank" class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/masigray.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/masigray/" target="_blank">work</a>
-                          <a href="깃허브주소" target="_blank">github</a>
+                          <span class="port-title">마시그레이</span>
+                          <div class="port-desc">
+                            <p class="port-version">
 
-                          <a href="https://parktaehoon1.github.io/page-masi/" target="_blank">work</a>
-                          <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                              반응형<i class="fas fa-mobile-alt res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">마시그레이</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/masigray/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="깃허브주소" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
 
-                          <a href="https://www.masigray.com:5021/main/main.asp" target="_blank">origin</a>
+                            <a href="https://parktaehoon1.github.io/page-masi/" target="_blank">
+                              <i class="fab fa-vuejs"></i>
+                              Vue.js</a>
+                            <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+
+                            <a href="https://www.masigray.com:5021/main/main.asp" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -456,17 +678,39 @@
                     <h5>STX(PC/Vue.js)</h5>
                     <div class="portfolio-list-wrap">
                       <a href="https://parktaehoon1.github.io/stxconst/" target="_blank" class="portfolio-list-wrap">
-                        <img src="http://placeimg.com/270/270/any" alt="">
+                        <img src="images/stx.png" alt="">
                       </a>
                       <div class="portfolio-link-list">
                         <div class="portfolio-link-wrap">
-                          <a href="https://parktaehoon1.github.io/stxconst/" target="_blank">work</a>
-                          <a href="https://github.com/Parktaehoon1/stxconst" target="_blank">github</a>
+                          <span class="port-title">STX건설</span>
+                          <div class="port-desc">
+                            <p class="port-version">
+                              PC버전<i class="fas fa-desktop res"></i>
+                            </p>
+                            <span class="port-date">작업기간:3일</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="portfolio-hover-list">
+                        <div class="portfolio-hover-list-wrap">
+                          <span class="port-title">STX건설</span>
+                          <div class="port-desc">
+                            <a href="https://parktaehoon1.github.io/stxconst/" target="_blank">
+                              <i class="far fa-window-maximize"></i>
+                              work</a>
+                            <a href="https://github.com/Parktaehoon1/stxconst" target="_blank">
+                              <i class="fab fa-github"></i>
+                              github</a>
 
-                          <a href="https://parktaehoon1.github.io/page-stx/" target="_blank">work</a>
-                          <a href="깃허브 Vue.js 주소" target="_blank">github</a>
+                            <a href="https://parktaehoon1.github.io/page-stx/" target="_blank">
+                              <i class="fab fa-vuejs"></i>
+                              Vue.js</a>
+                            <a href="깃허브 Vue.js 주소" target="_blank">github</a>
 
-                          <a href="원주소" target="_blank">origin</a>
+                            <a href="http://www.stxconst.co.kr/" target="_blank">
+                              <i class="fab fa-chrome"></i>
+                              origin</a>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -544,7 +788,6 @@
       <div class="inner" data-aos="fade-up" data-aos-duration="3000">
         <div class="contact-container">
           <h2 class="contact-me">Contact</h2>
-          메일 전화번호 에쏀에쓰 
           메일 전화번호 에쏀에쓰
           메일 전화번호 에쏀에쓰
           메일 전화번호 에쏀에쓰
@@ -552,7 +795,8 @@
           메일 전화번호 에쏀에쓰
           메일 전화번호 에쏀에쓰
           메일 전화번호 에쏀에쓰
-          메일 전화번호 에쏀에쓰  
+          메일 전화번호 에쏀에쓰
+          메일 전화번호 에쏀에쓰
           메일 전화번호 에쏀에쓰
           메일 전화번호 에쏀에쓰
           메일 전화번호 에쏀에쓰
