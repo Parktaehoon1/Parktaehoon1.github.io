@@ -76,6 +76,18 @@ $(document).ready(function () {
         delay: 10,
         time: 2500
     });
+
+ new Swiper(".sw-vision", {
+    spaceBetween: 1,
+    slidesPerView: 4,
+    centeredSlides: true,
+    loop: true,
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev"
+    // }
+  });
+
 })
 
 window.onload = function () {
@@ -89,7 +101,6 @@ window.onload = function () {
     //         })
     //     })
     // })
-
 
 
 

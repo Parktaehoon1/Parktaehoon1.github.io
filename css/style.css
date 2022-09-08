@@ -791,20 +791,20 @@ body {
   height: 100%;
 }
 
-/* contact */
-.contact {
+/* vision */
+.vision {
   position: relative;
   display: block;
-  width: 100vw;
+  width: 100%;
   height: 100%;
 }
 
-.contact-container {
+.vision-container {
   position: relative;
   display: block;
 }
 
-.contact-me {
+.vision-me {
   display: flex;
   align-items: center;
   position: relative;
@@ -814,14 +814,14 @@ body {
   white-space: nowrap;
 }
 
-.contact-me::before {
+.vision-me::before {
   content: '07.';
   position: relative;
   display: inline-block;
   color: #fff;
 }
 
-.contact-me::after {
+.vision-me::after {
   content: "";
   display: inline-block;
   position: relative;
@@ -829,6 +829,24 @@ body {
   height: 1px;
   margin-left: 20px;
   background-color: #fff;
+}
+
+
+.sw-vision {
+  position: relative;
+  height: 100%;
+}
+
+.swiper-slide {
+  height: 100%;
+  display: block;
+  transition: all 0.5s;
+  transform: scale(0.8);
+  text-align: center;
+}
+.swiper-slide.swiper-slide-active {
+  transform: scale(1);
+
 }
 
 
