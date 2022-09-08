@@ -4,12 +4,12 @@ $(document).ready(function () {
     let snsWrap = $('.sns-list');
 
     let aboutY = $('.about-me').offset().top;
-    console.log("about의 Y값",aboutY)
+    // console.log("about의 Y값",aboutY)
     $(window).scroll(function(){
         // 현재 스크롤바의 위치
 
         let temp = snsWrap.offset().top;
-        console.log(temp)
+        // console.log(temp)
         if(temp > aboutY) {
                 snsWrap.css({'opacity': '1' , "visibility": "visible"});
             // snsWrap.show()
@@ -101,18 +101,42 @@ window.onload = function () {
     //         })
     //     })
     // })
+    let btAll = document.getElementById('btAll');
+    let btClone = document.getElementById('btClone');
+    let btStudy = document.getElementById('btStudy');
+    let btVue = document.getElementById('btVue');
 
-    let allbtn = document.getElementById('all');
-    let vuebtn = document.getElementById('study');
-    console.log(allbtn);
-    let alllsit = document.querySelectorAll('portfolio-list');
-
-
-    allbtn.addEventListener('click', function(){
-        document.getElementById('vue').style.display = "none"; // hide
+    btAll.addEventListener('click', function(){
+        console.log("all 클릭")
+        showPort('.all')
     })
-    vuebtn.addEventListener('click', function(){
-        document.getElementById('all').style.display = "block"; // hide
+    btClone.addEventListener('click', function(){
+        console.log("clone 클릭")
+        showPort('.clone')
+    })
+    btStudy.addEventListener('click', function(){
+        console.log("study 클릭")
+        showPort('.study')
+    })
+    btVue.addEventListener('click', function(){
+        console.log("vue 클릭")
+        showPort('.vue')
     })
 
+    let boxs = document.querySelectorAll('.box');
+    console.log(boxs)
+    function showPort(_str){
+        console.log("fn 안의 _str",_str)
+        boxs.forEach(function(_str){
+            let cate = _str.getAttribute('data-cate');
+            console.log("fn 안의 cate",cate); // 속성찾음
+            // console.log("element",element); // 각각의 element 찾음
+            console.log("str",_str)
+            if(_str == '.clone'){
+                cate.style.display = 'none';
+            } else if (_str == '.study'){
+                element.style.display = 'none';
+            }
+        })
+    }
 }
