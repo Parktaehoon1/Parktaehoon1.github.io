@@ -31,7 +31,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -0.64px;
-  color: #fff;
+  color: #ffffff;
   overflow-x: hidden;
   background-color: #000;
 }
@@ -52,6 +52,12 @@ body {
   margin: 0 auto;
 }
 
+.inner h2{
+  font-size: 4vw;
+  font-weight: 900;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+}
 .ml30 {
   margin-left: 30px;
 }
@@ -232,15 +238,47 @@ body {
   width: 60%;
   font-family: 'Poppins';
   z-index: 999;
-  font-size: 60px;
+  font-size: 5vw;
   font-weight: 700;
+}
+
+.intro-main-wrap{
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+}
+.intro-desc-wrap{
+  position: relative;
+  display: block;
+}
+
+.dev{
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+  transition: all 3s;
+  transition-delay: 0.1s
+}
+.dev::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+}
+.dev:hover .dev::after{
+  width: 100%;
 }
 
 .intro-desc {
   position: relative;
   display: block;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 400;
+  font-family: 'JSDongkang-Regular'; 
 }
 
 .intro-pic {
@@ -288,7 +326,7 @@ body {
 }
 
 .about-me::before {
-  content: '01.';
+  content: '';
   position: relative;
   display: inline-block;
   color: #fff;
@@ -319,6 +357,32 @@ body {
 .about-desc {
   position: relative;
   display: block;
+}
+
+.about-title{
+  position: relative;
+  display: block;
+  font-size: 2vw;
+  margin-bottom: 15px;
+}
+.about-title-desc{
+  position: relative;
+  display: block;
+  margin: 10px 0;
+}
+.about-subtitle{
+  position: relative;
+  display: block;
+  margin: 10px 0;
+  font-weight: 700;
+}
+.about-subtitle span{
+  margin-left: 5px;
+}
+.about-subdesc{
+  position: relative;
+  display: block;
+  padding-left: 10px;
 }
 
 .about-right {
@@ -373,7 +437,7 @@ body {
 }
 
 .myskill::before {
-  content: '03.';
+  content: '';
   position: relative;
   display: inline-block;
   color: #fff;
@@ -388,8 +452,23 @@ body {
   margin-left: 20px;
   background-color: #fff;
 }
-.skill-container{}
-.skill-title{}
+.skill-container{
+  position: relative;
+  display: block;
+}
+.skill-title{
+  position: relative;
+  display: block;
+  font-size: 2vw;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0;
+  
+}
+
+.mainskill{
+  color: #888;
+}
 .skill-list{
   position: relative;
   display: flex;
@@ -430,7 +509,7 @@ body {
 }
 
 .mymbti::before {
-  content: '04.';
+  content: '';
   position: relative;
   display: inline-block;
   color: #fff;
@@ -465,7 +544,7 @@ body {
 }
 
 .myportfolio::before {
-  content: '05.';
+  content: '';
   position: relative;
   display: inline-block;
   color: #fff;
@@ -561,13 +640,17 @@ body {
 .project-list-title{
   position: relative;
   display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2vw;
+  font-weight: 700;
 }
 
 .portfolio-btn{
   position: relative;
   display: flex;
   justify-content: center;
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 .portfolio-btn button {
@@ -582,6 +665,11 @@ body {
   color: #e9e9e9;
   font-size: 18px;
 }
+
+.portfolio-btn button:hover{
+  box-shadow: 0 0 4px 2px #e9e9e97a;
+}
+
 
 .portfolio-cate{
   position: relative;
@@ -608,7 +696,7 @@ body {
 .portfolio-list li h5{
   position: relative;
   display: block;
-  margin-bottom: 10px;
+  margin: 25px 0;
 }
 
 .portfolio-list-wrap{
@@ -768,7 +856,7 @@ body {
 }
 
 .life-me::before {
-  content: '06.';
+  content: '';
   position: relative;
   display: inline-block;
   color: #fff;
@@ -839,7 +927,7 @@ body {
 }
 
 .vision-me::before {
-  content: '07.';
+  content: '';
   position: relative;
   display: inline-block;
   color: #fff;

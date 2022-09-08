@@ -92,6 +92,10 @@ $(document).ready(function () {
 
 window.onload = function () {
     AOS.init();
+    let dev = document.querySelector('.dev');
+    console.log(dev)
+    dev.style.color = 'white';
+
 
     // document.querySelectorAll(".depth1 li a").forEach(li => {
     //     li.addEventListener("click", e => {
