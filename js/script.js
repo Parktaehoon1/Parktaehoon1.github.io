@@ -107,36 +107,31 @@ window.onload = function () {
     let btVue = document.getElementById('btVue');
 
     btAll.addEventListener('click', function(){
-        console.log("all 클릭")
-        showPort('.all')
+        showPort('all');
     })
     btClone.addEventListener('click', function(){
-        console.log("clone 클릭")
-        showPort('.clone')
+        showPort('clone');
     })
     btStudy.addEventListener('click', function(){
-        console.log("study 클릭")
-        showPort('.study')
+        showPort('study');
     })
     btVue.addEventListener('click', function(){
-        console.log("vue 클릭")
-        showPort('.vue')
+        showPort('vue');
     })
 
     let boxs = document.querySelectorAll('.box');
-    console.log(boxs)
+    console.log("전체박스",boxs);
+
+    // 올바른 코드
     function showPort(_str){
         console.log("fn 안의 _str",_str)
-        boxs.forEach(function(_str){
-            let cate = _str.getAttribute('data-cate');
-            console.log("fn 안의 cate",cate); // 속성찾음
-            // console.log("element",element); // 각각의 element 찾음
-            console.log("str",_str)
-            if(_str == '.clone'){
-                cate.style.display = 'none';
-            } else if (_str == '.study'){
-                element.style.display = 'none';
-            }
+        boxs.forEach(function(item){
+            let cate = item.getAttribute('data-cate');
+            if(_str =='all' || _str == cate){
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+             }
         })
     }
 }
