@@ -3,16 +3,17 @@ $(document).ready(function () {
 
     let snsWrap = $('.sns-list');
 
-    let scY = $(window).scrollTop();
+    let aboutY = $('.about-me').offset().top;
+    console.log("about의 Y값",aboutY)
     $(window).scroll(function(){
         // 현재 스크롤바의 위치
 
         let temp = snsWrap.offset().top;
         console.log(temp)
-        if(temp > 600) {
+        if(temp > aboutY) {
                 snsWrap.css({'opacity': '1' , "visibility": "visible"});
             // snsWrap.show()
-            }else if(temp < 600){
+            }else if(temp < aboutY){
                 snsWrap.css({'opacity': '0' , "visibility": "hidden"});
             // snsWrap.hide()
             }
