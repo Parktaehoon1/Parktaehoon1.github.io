@@ -102,6 +102,17 @@ window.onload = function () {
     //     })
     // })
 
+    let allbtn = document.getElementById('all');
+    let vuebtn = document.getElementById('study');
+    console.log(allbtn);
+    let alllsit = document.querySelectorAll('portfolio-list');
 
+
+    allbtn.addEventListener('click', function(){
+        document.getElementById('vue').style.display = "none"; // hide
+    })
+    vuebtn.addEventListener('click', function(){
+        document.getElementById('all').style.display = "block"; // hide
+    })
 
 }
