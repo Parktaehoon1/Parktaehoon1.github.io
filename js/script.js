@@ -148,25 +148,28 @@ window.onload = function () {
     const myChart = new Chart(ctx, {
         type: 'radar',
         data: {
-            labels: ['책임감', 'IT활용능력', '성향', '소통능력', '도전정신'],
+            labels: ['책임감', '성실성', '도전정신', '전문성', '소통능력'],
             datasets: [{
                 label: 'possibility',
-                data: [95, 85, 87, 83, 85],
+                data: [95, 92, 90, 87, 90],
+                color: '#000',
                 backgroundColor: [
-                    'rgba(255, 255, 255, 0.2)',
+                    'rgba(20, 90, 120, 0.4)',
                 ],
                 borderColor: [
-                    // 'rgba(255, 99, 132, 1)',
-                    '#000',
+                    'rgba(255, 255, 255, 1)',
                 ],
-                borderWidth: 1,
-                pointBorderColor: '#e9e9e9'
+                borderWidth: 2,
+                pointBorderColor: '#e9e9e9',
+                pointBackgroundColor: 'rgb(255, 99, 132)',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(255, 99, 132)'
             }],
         },
         options: {
             responsive: false,
             layout: {
-                padding: 20,
+                padding: 0,
             },
             plugins: {
                 legend: {
@@ -176,17 +179,19 @@ window.onload = function () {
             scales: {
                 r: {
                     grid: {
-                        color: '#fff'
+                        color: '#fff',
                     },
                     angleLines: {
                         color: '#fff'
                     },
                     pointLabels: {
                         font: {
-                            size: 20,
-                            family: 'Noto Sans KR',
-                            color: '#fff'
-                        }
+                            size: 16,
+                            weight: 500,
+                            family: 'JSDongkang-Regular',
+                            backgroundColor: '#fff',
+                        },
+                        color: '#fff'
                     },
                     beginAtZero: true,
                 }
@@ -196,13 +201,14 @@ window.onload = function () {
                 suggestedMax: 100,
                 stepSize: 5,
                 maxTicksLimit: 10,
-                display: false
+                display: false,
+                fontColor: "#ff0000",
+                backgroundColor: "#000000",
             },
             chartArea: {
-                backgroundColor: 'red'
+                // backgroundColor:'transparent',
+                backgroundColor: 'rgba(0,0,0,1)'
             },
-
-            
         },
         // animation: {
         //     onComplete: () => {
@@ -217,35 +223,4 @@ window.onload = function () {
         //     },
         // }
     });
-
-    // Radical
-
-    // const config = {
-    //     type: 'radar',
-    //     data,
-    //     options: {
-    //         scales: {
-    //             r: {
-    //                 grid: {
-    //                     color: 'red'
-    //                 }
-    //             }
-    //         }
-    //     }
-    // };
-
-    // const labels = Utils.months({
-    //     count: 7
-    // });
-    // const data = {
-    //     labels: labels,
-    //     datasets: [{
-    //         label: 'My First dataset',
-    //         backgroundColor: 'rgba(54, 162, 235, 0.5)',
-    //         borderColor: 'rgb(54, 162, 235)',
-    //         borderWidth: 1,
-    //         data: [10, 20, 30, 40, 50, 0, 5],
-    //     }]
-    // };
-
 }
