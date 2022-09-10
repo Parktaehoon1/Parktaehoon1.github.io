@@ -52,12 +52,13 @@ body {
   margin: 0 auto;
 }
 
-.inner h2{
+.inner h2 {
   font-size: 4vw;
   font-weight: 900;
   font-family: 'Poppins';
   text-transform: uppercase;
 }
+
 .ml30 {
   margin-left: 30px;
 }
@@ -65,8 +66,9 @@ body {
 .mr30 {
   margin-right: 30px;
 }
+
 /* sns  */
-.sns{
+.sns {
   position: fixed;
   left: 30px;
   bottom: 20px;
@@ -74,15 +76,17 @@ body {
   z-index: 999;
 }
 
-.sns-show{
+.sns-show {
   opacity: 1;
   visibility: visible;
 }
-.sns-container{
+
+.sns-container {
   position: relative;
   display: block;
 }
-.sns-list{
+
+.sns-list {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -90,18 +94,21 @@ body {
   visibility: hidden;
   transition: all 0.5s;
 }
-.sns-list li{
+
+.sns-list li {
   position: relative;
   display: block;
 }
-.sns-list li a{
+
+.sns-list li a {
   position: relative;
   display: block;
   font-size: 30px;
   margin: 10px 0;
-  transition: all 0.5s;    
+  transition: all 0.5s;
 }
-.sns-list li:hover .snsicon{
+
+.sns-list li:hover .snsicon {
   color: #fff;
 }
 
@@ -111,9 +118,10 @@ body {
   display: block;
 }
 
-.scrolltop{
+.scrolltop {
   padding-top: 100px;
 }
+
 /* header */
 .header {
   position: fixed;
@@ -172,13 +180,15 @@ body {
   color: #fff;
   transition: all 0.3s;
 }
-.depth1 li a span{
+
+.depth1 li a span {
   position: relative;
   display: block;
   font-size: 12px;
   font-weight: 500;
   color: #e9e9e954;
 }
+
 .mainmenu::after {
   content: "";
   position: absolute;
@@ -242,24 +252,26 @@ body {
   font-weight: 700;
 }
 
-.intro-main-wrap{
+.intro-main-wrap {
   position: relative;
   display: block;
   margin-bottom: 30px;
 }
-.intro-desc-wrap{
+
+.intro-desc-wrap {
   position: relative;
   display: block;
 }
 
-.dev{
+.dev {
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255,255,255,0.5);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
   transition: all 3s;
   transition-delay: 0.1s
 }
-.dev::after{
+
+.dev::after {
   content: '';
   position: absolute;
   left: 0;
@@ -269,7 +281,8 @@ body {
   background-color: #888;
   transition: all 0.3s;
 }
-.dev:hover .dev::after{
+
+.dev:hover .dev::after {
   width: 100%;
 }
 
@@ -278,7 +291,7 @@ body {
   display: block;
   font-size: 1.5vw;
   font-weight: 400;
-  font-family: 'JSDongkang-Regular'; 
+  font-family: 'JSDongkang-Regular';
 }
 
 .intro-pic {
@@ -359,27 +372,31 @@ body {
   display: block;
 }
 
-.about-title{
+.about-title {
   position: relative;
   display: block;
   font-size: 2vw;
   margin-bottom: 15px;
 }
-.about-title-desc{
+
+.about-title-desc {
   position: relative;
   display: block;
   margin: 10px 0;
 }
-.about-subtitle{
+
+.about-subtitle {
   position: relative;
   display: block;
   margin: 10px 0;
   font-weight: 700;
 }
-.about-subtitle span{
+
+.about-subtitle span {
   margin-left: 5px;
 }
-.about-subdesc{
+
+.about-subdesc {
   position: relative;
   display: block;
   padding-left: 10px;
@@ -452,30 +469,34 @@ body {
   margin-left: 20px;
   background-color: #fff;
 }
-.skill-container{
+
+.skill-container {
   position: relative;
   display: block;
 }
-.skill-title{
+
+.skill-title {
   position: relative;
   display: block;
   font-size: 2vw;
   font-weight: 700;
   text-align: center;
   margin: 40px 0;
-  
+
 }
 
-.mainskill{
+.mainskill {
   color: #888;
 }
-.skill-list{
+
+.skill-list {
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.skill-list li{
+
+.skill-list li {
   position: relative;
   display: block;
   width: 25%;
@@ -483,13 +504,14 @@ body {
   margin: 30px 0;
 }
 
-.skillicon{
+.skillicon {
   position: relative;
   display: block;
   font-size: 60px;
   height: 84px;
   margin-bottom: 20px;
 }
+
 /* mbti */
 .mbti {
   position: relative;
@@ -525,14 +547,15 @@ body {
   background-color: #fff;
 }
 
-.mbti-container{
+.mbti-container {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
   background-color: transparent;
 }
-.mbti-desc{
+
+.mbti-desc {
   position: absolute;
   left: 0;
   top: 50%;
@@ -545,28 +568,30 @@ body {
   border-radius: 15px;
 }
 
-.mbti-depth1{
+.mbti-depth1 {
   position: relative;
   display: block;
   height: 100%;
 }
-.mbti-depth1 li{}
 
-.mbti-list-title{
+.mbti-depth1 li {}
+
+.mbti-list-title {
   position: relative;
   display: block;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 15px;
 }
-.mbti-list-desc{
+
+.mbti-list-desc {
   position: relative;
   display: block;
   margin-bottom: 15px;
 
 }
 
-#myChart{
+#myChart {
   position: relative;
   display: block;
   float: right;
@@ -623,11 +648,12 @@ body {
   margin-bottom: 50px;
 }
 
-.project-wrap:nth-child(2){
+.project-wrap:nth-child(2) {
   display: flex;
   justify-content: center;
 }
-.project-wrap:nth-child(3){
+
+.project-wrap:nth-child(3) {
   display: flex;
   justify-content: start;
 }
@@ -666,13 +692,15 @@ body {
   display: block;
   text-align: right;
 }
-.project-name{
+
+.project-name {
   position: relative;
   display: block;
   font-size: 22px;
   font-weight: 700;
 }
-.project-title{}
+
+.project-title {}
 
 .project-desc {
   position: relative;
@@ -682,12 +710,12 @@ body {
   border: 1px solid red;
 }
 
-.portfolio-wrap{
+.portfolio-wrap {
   position: relative;
   display: block;
 }
 
-.project-list-title{
+.project-list-title {
   position: relative;
   display: block;
   text-transform: uppercase;
@@ -696,7 +724,7 @@ body {
   font-weight: 700;
 }
 
-.portfolio-btn{
+.portfolio-btn {
   position: relative;
   display: flex;
   justify-content: center;
@@ -716,17 +744,17 @@ body {
   font-size: 18px;
 }
 
-.portfolio-btn button:hover{
+.portfolio-btn button:hover {
   box-shadow: 0 0 4px 2px #e9e9e97a;
 }
 
 
-.portfolio-cate{
+.portfolio-cate {
   position: relative;
   display: block;
 }
 
-.portfolio-cate h4{
+.portfolio-cate h4 {
   position: relative;
   display: block;
 }
@@ -743,20 +771,21 @@ body {
   margin: 20px 10px;
   text-align: center;
 }
-.portfolio-list li h5{
+
+.portfolio-list li h5 {
   position: relative;
   display: block;
   margin: 25px 0;
 }
 
-.portfolio-list-wrap{
+.portfolio-list-wrap {
   position: relative;
   display: block;
   width: 270px;
   height: 270px;
 }
 
-.portfolio-list-wrap img{
+.portfolio-list-wrap img {
   position: relative;
   display: block;
   width: 100%;
@@ -802,7 +831,7 @@ body {
   padding: 0 10px;
 }
 
-.port-title{
+.port-title {
   position: absolute;
   left: 50%;
   top: 20%;
@@ -811,7 +840,7 @@ body {
   font-weight: bold;
 }
 
-.port-desc{
+.port-desc {
   position: absolute;
   left: 50%;
   top: 65%;
@@ -819,21 +848,25 @@ body {
   display: block;
   width: 100%;
 }
-.port-version{
+
+.port-version {
   position: relative;
   display: inline-block;
   margin-right: 15px;
 }
-.res{
+
+.res {
   margin-left: 5px;
   font-size: 8px;
 }
-.port-date{
+
+.port-date {
   position: relative;
   display: inline-block;
   font-weight: 700;
 }
-.portfolio-hover-list{
+
+.portfolio-hover-list {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -848,22 +881,24 @@ body {
   border-radius: 15px;
 }
 
-.portfolio-list-wrap:hover .portfolio-hover-list{
+.portfolio-list-wrap:hover .portfolio-hover-list {
   opacity: 1;
   visibility: visible;
   background: rgba(0, 0, 0, 1);
 }
-.portfolio-list-wrap:hover .portfolio-link-list{
+
+.portfolio-list-wrap:hover .portfolio-link-list {
   opacity: 0;
   visibility: hidden;
 }
-.portfolio-list-wrap:hover .portfolio-list-wrap img{
+
+.portfolio-list-wrap:hover .portfolio-list-wrap img {
   filter: brightness(90%);
   box-shadow: 0 0 4px 2px #e9e9e97a;
 }
 
 
-.portfolio-hover-list-wrap{
+.portfolio-hover-list-wrap {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -874,7 +909,8 @@ body {
   color: #e9e9e9;
   padding: 0 10px;
 }
-.port-desc a{
+
+.port-desc a {
   position: relative;
   display: inline-block;
   font-weight: bold;
@@ -934,24 +970,207 @@ body {
 
 .life-box {
   position: relative;
-  display: flex;
-  justify-content: space-between;
+  display: block;
   margin-bottom: 50px;
 }
 
-.life-card {
+.life-list {
   position: relative;
-  display: inline-block;
-  width: 270px;
-  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
 }
 
-.life-card img {
+.life-desc {
+  position: relative;
+  display: block;
+  width: 35%;
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: right;
+}
+
+.life-creative {
+  position: relative;
+  display: block;
+  width: 62.5%;
+  height: 400px;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.life-creative strong {
+  padding: 20px;
+  z-index: 1;
+  font-size: 5vw;
+  font-family: 'Poppins';
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.life-img {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
+  opacity: 1;
 }
+
+.hover-cre{
+  position: relative;
+  display: block;
+  width: 100%;
+  transition: .5s;
+}
+
+.life-img:hover .hover-cre{
+  position: relative;
+  display: block;
+  width: 100%;
+  scale: 1.1;
+}
+
+.life-reswrap{
+  position: relative;
+  display: block;
+  width: 30%;
+  height: 100%;
+}
+.life-responsible{
+  position: relative;
+  display: block;
+  height: 400px;
+  overflow: hidden;
+}
+.life-responsible strong{
+  padding: 20px;
+  z-index: 1;
+  font-size: 3vw;
+  font-family: 'Poppins';
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.life-resimg{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.hover-res{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.life-resimg:hover .hover-res{
+    position: relative;
+    display: block;
+    width: 100%;
+    scale: 1.1;
+}
+
+
+.life-socialwrap{
+  position: relative;
+  display: block;
+  width: 30%;
+  height: 100%;
+}
+.life-sociable{
+  position: relative;
+  display: block;
+  height: 300px;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+.life-sociable strong{
+  padding: 20px;
+  z-index: 1;
+  font-size: 3vw;
+  font-family: 'Poppins';
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.life-sociableimg{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.hover-social{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.life-sociableimg:hover .hover-social{
+  position: relative;
+  display: block;
+  width: 100%;
+  scale: 1.1;
+}
+
+.life-positivewrap{
+  position: relative;
+  display: block;
+  width: 30%;
+  height: 400px;
+}
+.life-positive{
+  position: relative;
+  display: block;
+  height: 100%;
+  overflow: hidden;
+}
+.life-positive strong{
+  padding: 20px;
+  z-index: 1;
+  font-size: 3vw;
+  font-family: 'Poppins';
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.life-positiveimg{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.hover-positive{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.life-positiveimg:hover .hover-positive{
+  position: relative;
+  display: block;
+  width: 100%;
+  scale: 1.1;
+}
+
 
 /* vision */
 .vision {
@@ -1006,6 +1225,7 @@ body {
   transform: scale(0.8);
   text-align: center;
 }
+
 .swiper-slide.swiper-slide-active {
   transform: scale(1);
 
