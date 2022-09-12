@@ -226,6 +226,110 @@ body {
   display: block;
 }
 
+@media all and (max-width:750px){
+  .header {
+    position: fixed;
+    left: 0;
+    top: 20px;
+    display: block;
+    width: 100%;
+    height: 80px;
+    padding: 0 60px;
+    z-index: 9999;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .logo {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 40px;
+    color: #fff;
+    background: url('/images/White\ logo\ -\ no\ background.svg') no-repeat center;
+    background-size: cover;
+  }
+  
+  .nav-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .depth1 {
+    position: relative;
+    display: none;
+  }
+  
+  .depth1 li {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .depth1 li a {
+    position: relative;
+    display: block;
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  .depth1 li a span {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    color: #e9e9e954;
+  }
+  
+  .mainmenu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #888;
+    transition: width 0.5s;
+  }
+  
+  .depth1 li a:hover {
+    color: #888;
+  }
+  
+  .depth1 li:hover .mainmenu::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #888;
+  }
+  
+  
+  .header-btn {
+    position: relative;
+    display: block;
+  }
+  
+  .header-btn a {
+    position: relative;
+    display: block;
+  }
+}
+
 /* introduce */
 .introduce {
   position: relative;
@@ -311,6 +415,94 @@ body {
   width: 100%;
   height: 100%;
   /* border-radius: 50%; */
+}
+
+@media all and (max-width:750px){
+  .introduce {
+    position: relative;
+    display: block;
+    height: 100vh;
+    padding-left: 0;
+  }
+  
+  .intro-container {
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+  
+  .intro-txt {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 60vw;
+    font-family: 'Poppins';
+    z-index: 999;
+    font-size: 7vw;
+    font-weight: 700;
+  }
+  
+  .intro-main-wrap {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  .intro-desc-wrap {
+    position: relative;
+    display: block;
+  }
+  
+  .dev {
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    transition: all 3s;
+    transition-delay: 0.1s
+  }
+  
+  .dev::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: #888;
+    transition: all 0.3s;
+  }
+  
+  .dev:hover .dev::after {
+    width: 100%;
+  }
+  
+  .intro-desc {
+    position: relative;
+    display: block;
+    font-size: 1.5vw;
+    font-weight: 400;
+    font-family: 'JSDongkang-Regular';
+  }
+  
+  .intro-pic {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+  }
+  
+  .intro-pic img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+  }
 }
 
 .split span {
@@ -436,6 +628,128 @@ body {
   border-radius: 10px;
 }
 
+@media all and (max-width:750px){
+  .about {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+  }
+  .about .inner {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+  }
+  .about-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  .about-me::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .about-me::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #fff;
+  }
+  
+  
+  .about-wrapper {
+    display: block;
+  }
+  
+  .about-left {
+    position: relative;
+    display: block;
+  }
+  
+  .about-desc {
+    position: relative;
+    display: block;
+  }
+  
+  .about-title {
+    position: relative;
+    display: block;
+    font-size: 4vw;
+    margin-bottom: 15px;
+  }
+  
+  .about-title-desc {
+    position: relative;
+    display: block;
+    font-size: 3vw;
+    margin: 10px 0;
+  }
+  
+  .about-subtitle {
+    position: relative;
+    display: block;
+    margin: 10px 0;
+    font-size: 3vw;
+    font-weight: 700;
+  }
+  
+  .about-subtitle span {
+    margin-left: 5px;
+  }
+  
+  .about-subdesc {
+    position: relative;
+    display: block;
+    font-size: 3vw;
+    padding-left: 10px;
+  }
+  
+  .about-right {
+    position: relative;
+    display: block;
+  }
+  
+  .my-picture {
+    position: relative;
+    display: block;
+    width: 60vw;
+    height: 60vw;
+    margin: 20px auto;
+  }
+  
+  .my-picture::after {
+    content: "";
+    position: absolute;
+    top: -1vw;
+    left: -1vw;
+    display: block;
+    width: 61vw;
+    height: 61vw;
+    z-index: -1;
+    border: 2px solid #fff;
+    border-radius: 10px;
+  }
+  
+  .my-picture img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
 /* skill */
 .skill {
   position: relative;
@@ -483,7 +797,6 @@ body {
   font-weight: 700;
   text-align: center;
   margin: 40px 0;
-
 }
 
 .mainskill {
@@ -512,6 +825,89 @@ body {
   height: 84px;
   margin-bottom: 20px;
 }
+
+@media all and (max-width:750px){
+  .skill {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+  }
+  .skill .inner {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+  }
+  .myskill {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  .myskill::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .myskill::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #fff;
+  }
+  
+  .skill-container {
+    position: relative;
+    display: block;
+  }
+  
+  .skill-title {
+    position: relative;
+    display: block;
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+  
+  }
+  
+  .mainskill {
+    color: #888;
+  }
+  
+  .skill-list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .skill-list li {
+    position: relative;
+    display: block;
+    width: 25%;
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .skillicon {
+    position: relative;
+    display: block;
+    font-size: 60px;
+    height: 84px;
+    margin-bottom: 20px;
+  }
+}
+
 
 /* mbti */
 .mbti {
@@ -556,6 +952,20 @@ body {
   background-color: transparent;
 }
 
+.mbti-title {
+  position: relative;
+  display: block;
+  font-size: 2vw;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.mainmbti {
+  color: #888;
+}
+
+
 .mbti-desc {
   position: absolute;
   left: 0;
@@ -599,6 +1009,121 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
+}
+
+@media all and (max-width:750px){
+  .mbti {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+  }
+  
+  .mbti .inner {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+  }
+  .mymbti {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+
+  .mymbti::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .mymbti::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #fff;
+  }
+  
+  .mbti-container {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  .mbti-title {
+    position: relative;
+    display: block;
+    font-size: 3.5vw;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .mainmbti {
+    color: #888;
+  }
+  
+  
+  .mbti-desc {
+      position: relative;
+      left: 0;
+      top: 0;
+      transform: none;
+      display: block;
+      height: 450px;
+      float: none;
+      background-color: rgba(20, 90, 120, 0.4);
+      padding: 20px;
+      border-radius: 15px;
+  }
+  
+  .mbti-depth1 {
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+  
+  .mbti-depth1 li {}
+  
+  .mbti-list-title {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .mbti-list-desc {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+  
+  }
+  
+.res-canvas{
+  position: relative;
+  display: block;
+}
+
+  #myChart {
+    position: relative;
+    display: block;
+    float: none;
+    width: 100% !important;
+    height: 650px !important;
+    opacity: 1;
+    margin: 0 auto;
+  }
 }
 
 /* portfolio */
@@ -966,7 +1491,7 @@ body {
   width: 100%;
   text-align: center;
   font-size: 30px;
-  margin: 80px 0 40px 0;
+  margin: 40px 0;
 }
 
 .life-box {
@@ -1219,6 +1744,7 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
+  margin: 100px 0;
 }
 
 .swiper-slide {
@@ -1263,7 +1789,7 @@ body {
 .sw-vision-control{
   position: absolute;
   left: 50%;
-  bottom: -10%;
+  bottom: -20%;
   transform: translateX(-50%);
   display: block;
 }
@@ -1286,16 +1812,17 @@ body {
 }
 
 /* footer */
-.footer {
+/* .contact {
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 20vw;
 }
 
 .contact-container {
   position: relative;
   display: block;
+  text-align: center;
 }
 
 .contact-me {
@@ -1323,4 +1850,22 @@ body {
   height: 1px;
   margin-left: 20px;
   background-color: #fff;
+}
+
+.contact-container a{
+  font-size: 0;
+}
+.contact-container a i{
+  font-size: 40px;
+  margin: 15px;
+} */
+
+.footer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  margin: 10px 0;
 }
