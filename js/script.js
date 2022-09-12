@@ -4,6 +4,8 @@ $(document).ready(function () {
     let snsWrap = $('.sns-list');
 
     let aboutY = $('.about-me').offset().top;
+    let contactY = $('.footer').offset().top;
+    console.log(contactY);
     // console.log("about의 Y값",aboutY)
     $(window).scroll(function () {
         // 현재 스크롤바의 위치
@@ -23,7 +25,6 @@ $(document).ready(function () {
             });
             // snsWrap.hide()
         }
-
     })
 
 
@@ -83,14 +84,20 @@ $(document).ready(function () {
     });
 
     new Swiper(".sw-vision", {
-        spaceBetween: 1,
-        slidesPerView: 4,
-        centeredSlides: true,
-        loop: true,
+        spaceBetween: 50,
+        slidesPerView: 2,
+        autoplay: {
+            delay: 4000,
+        },
+        // centeredSlides: true,
+        // loop: true,
         // navigation: {
         //   nextEl: ".swiper-button-next",
         //   prevEl: ".swiper-button-prev"
         // }
+        pagination: {
+            el: ".sw-vision-pg",
+        },
     });
 
 })
