@@ -1,5 +1,17 @@
 $(document).ready(function () {
     // sns창 나오게하기
+    let mbWrap = $('.mb-wrap');
+    let mbBtn = $('.mb-btn');
+
+    mbBtn.click(function(){
+        console.log('btn 클릭')
+        mbWrap.css('display', 'block');
+    })
+
+    mbWrap.click(function(){
+        mbWrap.css('display', 'none');
+    })
+
 
     let snsWrap = $('.sns-list');
 
@@ -85,7 +97,7 @@ $(document).ready(function () {
 
     new Swiper(".sw-vision", {
         spaceBetween: 50,
-        slidesPerView: 2,
+        slidesPerView: 1,
         autoplay: {
             delay: 6000,
         },
@@ -98,6 +110,13 @@ $(document).ready(function () {
         pagination: {
             el: ".sw-vision-pg",
         },
+        breakpoints: {
+            // when window width is >= 320px
+            700: {
+                slidesPerView: 2,
+                spaceBetween: 50
+            },
+        }
     });
 
 })

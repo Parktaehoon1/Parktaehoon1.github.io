@@ -113,6 +113,115 @@ body {
   color: #fff;
 }
 
+@media all and (max-width:1200px){
+  .sns {
+    position: fixed;
+    left: 70px;
+    bottom: 30px;
+    display: none;
+    z-index: 999;
+  }
+  
+  .sns-show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .sns-container {
+    position: relative;
+    display: block;
+  }
+  
+  .sns-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+  
+  
+  .sns-list li {
+    position: relative;
+    display: block;
+  }
+  
+  .sns-list li a {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    margin: 10px 0;
+    transition: all 0.5s;
+  }
+  
+  .sns-list li:hover .snsicon {
+    color: #fff;
+  }
+  
+}
+
+.mb-wrap{
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.mb-nav{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.mb-depth1{
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.mb-depth1 li{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+.mb-depth1 li a{
+  position: relative;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.mb-btn{
+  position: relative;
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+@media all and (max-width:750px){
+  .mb-btn{
+    position: relative;
+    display: block;
+    font-size: 30px;
+  }
+}
+
+
 /* wrap */
 .wrap {
   position: relative;
@@ -481,7 +590,7 @@ body {
   .intro-desc {
     position: relative;
     display: block;
-    font-size: 1.5vw;
+    font-size: 3vw;
     font-weight: 400;
     font-family: 'JSDongkang-Regular';
   }
@@ -1861,6 +1970,13 @@ body {
   align-items: flex-end;
   margin-bottom: 30px;
 }
+.life-list-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
 
 .life-desc {
   position: relative;
@@ -2051,6 +2167,272 @@ body {
   scale: 1.1;
 }
 
+@media all and (max-width:850px){
+  .life {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+  }
+  
+  .life .inner{
+    position: relative;
+    display: block;
+    padding: 0 20px;
+  }
+  .life-container {
+    position: relative;
+    display: block;
+  }
+  
+  .life-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  .life-me::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .life-me::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #fff;
+  }
+  
+  
+  .life-me-title {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0;
+  }
+  
+  .life-box {
+    position: relative;
+    display: block;
+    margin-bottom: 50px;
+  }
+  
+  .life-list {
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+  .life-list-bottom {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 30px;
+  }
+  
+  .life-desc {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  .life-creative {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 400px;
+    opacity: 1;
+    overflow: hidden;
+  }
+  
+  .life-creative strong {
+    padding: 20px;
+    z-index: 1;
+    font-size: 10vw;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .life-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  
+  .hover-cre{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+  }
+  
+  .life-img:hover .hover-cre{
+    position: relative;
+    display: block;
+    width: 100%;
+    scale: 1.1;
+  }
+  
+  .life-reswrap{
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 100%;
+  }
+  .life-responsible{
+    position: relative;
+    display: block;
+    height: 400px;
+    overflow: hidden;
+  }
+  .life-responsible strong{
+    padding: 20px;
+    z-index: 1;
+    font-size: 3.5vw;
+    font-family: 'Poppins';
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .life-resimg{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  .hover-res{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+  }
+  
+  .life-resimg:hover .hover-res{
+      position: relative;
+      display: block;
+      width: 100%;
+      scale: 1.1;
+  }
+  
+  
+  .life-socialwrap{
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 100%;
+  }
+  .life-sociable{
+    position: relative;
+    display: block;
+    height: 400px;
+    margin-bottom: 0;
+    overflow: hidden;
+  }
+  .life-sociable strong{
+    padding: 20px;
+    z-index: 1;
+    font-size: 3.5vw;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .life-sociableimg{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  .hover-social{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+  }
+  
+  .life-sociableimg:hover .hover-social{
+    position: relative;
+    display: block;
+    width: 100%;
+    scale: 1.1;
+  }
+  
+  .life-positivewrap{
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 400px;
+  }
+  .life-positive{
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+  }
+  .life-positive strong{
+    padding: 20px;
+    z-index: 1;
+    font-size: 3.5vw;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .life-positiveimg{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  .hover-positive{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+  }
+  
+  .life-positiveimg:hover .hover-positive{
+    position: relative;
+    display: block;
+    width: 100%;
+    scale: 1.1;
+  }
+}
 
 /* vision */
 .vision {
@@ -2164,6 +2546,127 @@ body {
   background-color: #888;
   opacity: 1;
 }
+
+@media all and (max-width:1200px){
+  .vision {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .vision .inner{
+    position: relative;
+    display: block;
+    padding: 0 20px;
+  }
+
+  .vision-container {
+    position: relative;
+    display: block;
+  }
+  
+  .vision-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+  
+  .vision-me::before {
+    content: '';
+    position: relative;
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .vision-me::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #fff;
+  }
+  
+  .swiper-wrapper{}
+  
+  .sw-vision {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 100px 0;
+  }
+  
+  .swiper-slide {
+    height: 100%;
+    display: block;
+    transition: all 0.5s;
+    /* transform: scale(0.8); */
+    text-align: center;
+  }
+  
+  .swiper-slide img{
+    position: relative;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+  
+  .swiper-slide.swiper-slide-active {
+    transform: scale(1);
+  }
+  .sw-vision-title{
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 15px auto;
+  }
+  
+  .sw-vision-title p{
+    float: left;
+    position: relative;
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .sw-vision-title p span{
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 20px;
+  }
+  
+  .sw-vision-control{
+    position: absolute;
+    left: 50%;
+    bottom: -20%;
+    transform: translateX(-50%);
+    display: block;
+  }
+  .sw-vision-pg{
+    position: relative;
+    display: flex;
+  }
+  .swiper-pagination-bullet{
+    position: relative;
+    display: block;
+    background-color: #888;
+    opacity: 0.7;
+    margin: 10px 5px;
+  }
+  .swiper-pagination-bullet-active{
+    position: relative;
+    display: block;
+    background-color: #888;
+    opacity: 1;
+  }
+}
+
 
 /* footer */
 /* .contact {
