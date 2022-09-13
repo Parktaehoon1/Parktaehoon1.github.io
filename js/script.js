@@ -5,11 +5,13 @@ $(document).ready(function () {
 
     mbBtn.click(function(){
         console.log('btn 클릭')
-        mbWrap.css('display', 'block');
+        // mbWrap.css('display', 'block');
+        mbWrap.stop().fadeIn(500)
     })
 
     mbWrap.click(function(){
-        mbWrap.css('display', 'none');
+        // mbWrap.css('display', 'none');
+        mbWrap.stop().fadeOut(500)
     })
 
 

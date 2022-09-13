@@ -169,7 +169,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: 99999;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .mb-nav{
   position: absolute;
@@ -240,7 +240,7 @@ body {
   display: block;
   width: 100%;
   height: 80px;
-  padding: 0 60px;
+  padding: 0 4vw;
   z-index: 9999;
   backdrop-filter: blur(5px);
   border-top: 1px solid #fff;
@@ -343,7 +343,7 @@ body {
     display: block;
     width: 100%;
     height: 80px;
-    padding: 0 60px;
+    padding: 0 4vw;
     z-index: 9999;
     backdrop-filter: blur(5px);
     border-top: 1px solid #fff;
@@ -494,10 +494,7 @@ body {
   height: 5px;
   background-color: #888;
   transition: all 0.3s;
-}
-
-.dev:hover .dev::after {
-  width: 100%;
+  color: #fff;
 }
 
 .intro-desc {
@@ -1189,7 +1186,7 @@ body {
       top: 0;
       transform: none;
       display: block;
-      height: 450px;
+      height: 100%;
       float: none;
       background-color: rgba(20, 90, 120, 0.4);
       padding: 20px;
@@ -1285,6 +1282,7 @@ body {
 
 .project-wrap:nth-child(2) {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: center;
 }
 
@@ -1328,6 +1326,14 @@ body {
   text-align: right;
 }
 
+.second{
+  position: relative;
+  right: -20px;
+  top: 20px;
+  display: block;
+  text-align: left;
+}
+
 .project-name {
   position: relative;
   display: block;
@@ -1341,8 +1347,7 @@ body {
   position: relative;
   display: block;
   width: 450px;
-  background-color: lightgreen;
-  border: 1px solid red;
+  background-color: rgba(100, 100, 100, 0.7);
 }
 
 .portfolio-wrap {
@@ -1680,8 +1685,8 @@ body {
     position: relative;
     display: block;
     width: 450px;
-    background-color: lightgreen;
-    border: 1px solid red;
+    background-color: darkgray;
+
   }
   
   .portfolio-wrap {
@@ -2126,12 +2131,12 @@ body {
   position: relative;
   display: block;
   width: 30%;
-  height: 400px;
+  height: 100%;
 }
 .life-positive{
   position: relative;
   display: block;
-  height: 100%;
+  height: 400px;
   overflow: hidden;
 }
 .life-positive strong{
@@ -2305,7 +2310,7 @@ body {
   .life-responsible{
     position: relative;
     display: block;
-    height: 400px;
+    height: 300px;
     overflow: hidden;
   }
   .life-responsible strong{
@@ -2351,7 +2356,7 @@ body {
   .life-sociable{
     position: relative;
     display: block;
-    height: 400px;
+    height: 300px;
     margin-bottom: 0;
     overflow: hidden;
   }
@@ -2392,12 +2397,12 @@ body {
     position: relative;
     display: block;
     width: 30%;
-    height: 400px;
+    height: 100%;
   }
   .life-positive{
     position: relative;
     display: block;
-    height: 100%;
+    height: 300px;
     overflow: hidden;
   }
   .life-positive strong{
@@ -2489,6 +2494,7 @@ body {
   transition: all 0.5s;
   /* transform: scale(0.8); */
   text-align: center;
+      padding: 29px;
 }
 
 .swiper-slide img{
