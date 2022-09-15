@@ -180,17 +180,17 @@ window.onload = function () {
             datasets: [{
                 label: 'possibility',
                 data: [95, 92, 90, 87, 90],
-                color: '#000',
+                color: '#8892b0',
                 backgroundColor: [
                     'rgba(20, 90, 120, 0.4)',
                 ],
                 borderColor: [
-                    'rgba(255, 255, 255, 1)',
+                    '#8892b0',
                 ],
                 borderWidth: 2,
                 pointBorderColor: '#e9e9e9',
                 pointBackgroundColor: 'rgb(255, 99, 132)',
-                pointHoverBackgroundColor: '#fff',
+                pointHoverBackgroundColor: '#8892b0',
                 pointHoverBorderColor: 'rgb(255, 99, 132)'
             }],
         },
@@ -207,10 +207,10 @@ window.onload = function () {
             scales: {
                 r: {
                     grid: {
-                        color: '#fff',
+                        color: '#8892b0',
                     },
                     angleLines: {
-                        color: '#fff'
+                        color: '#8892b0'
                     },
                     pointLabels: {
                         font: {
@@ -219,7 +219,7 @@ window.onload = function () {
                             family: 'JSDongkang-Regular',
                             backgroundColor: '#fff',
                         },
-                        color: '#fff'
+                        color: '#8892b0'
                     },
                     beginAtZero: true,
                 }
