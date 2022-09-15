@@ -1427,6 +1427,10 @@ body {
   border-radius: 5px;
 }
 
+.portfolio-list > li li:hover .box{
+  box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
 .portfolio-list li h5 {
   position: relative;
   display: block;
@@ -2106,11 +2110,12 @@ body {
   z-index: 1;
   font-size: 5vw;
   font-family: 'Poppins';
-  font-weight: 700;
+  font-weight: 600;
   text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
   position: absolute;
   left: 0;
   bottom: 0;
+  color: #e9e9e9;
 }
 
 .life-img {
@@ -2150,13 +2155,14 @@ body {
 .life-responsible strong{
   padding: 20px;
   z-index: 1;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: 'Poppins';
   text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
   font-weight: 700;
   position: absolute;
   left: 0;
   bottom: 0;
+  color: #e9e9e9;
 }
 .life-resimg{
   position: relative;
@@ -2197,13 +2203,14 @@ body {
 .life-sociable strong{
   padding: 20px;
   z-index: 1;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: 'Poppins';
   font-weight: 700;
   text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
   position: absolute;
   left: 0;
   bottom: 0;
+  color: #e9e9e9;
 }
 .life-sociableimg{
   position: relative;
@@ -2242,13 +2249,14 @@ body {
 .life-positive strong{
   padding: 20px;
   z-index: 1;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: 'Poppins';
   font-weight: 700;
   text-shadow: 2px 2px 4px rgb(0 0 0 / 50%);
   position: absolute;
   left: 0;
   bottom: 0;
+  color: #e9e9e9;
 }
 .life-positiveimg{
   position: relative;
