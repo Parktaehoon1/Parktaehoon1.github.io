@@ -71,6 +71,33 @@ body {
 .size{
   font-size: 13px;
 }
+.usecolor{
+  position: relative;
+  color: #64ffda;
+}
+
+.usecolor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #64ffda;
+  transition: width 0.5s;
+}
+
+.project-desc:hover .usecolor::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #64ffda;
+}
+
+
 
 /* sns  */
 .sns {
@@ -1305,6 +1332,7 @@ body {
   position: relative;
   display: flex;
   justify-content: start;
+  align-items: center;
   margin: 150px 0;
 }
 
@@ -1333,6 +1361,8 @@ body {
   box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
 }
 
+
+
 .portimg img {
   display: block;
   width: 100%;
@@ -1351,7 +1381,7 @@ body {
 .project-content {
   position: relative;
   right: 20px;
-  top: 20px;
+  top: 0;
   display: block;
   text-align: right;
 }
@@ -1359,7 +1389,7 @@ body {
 .second{
   position: relative;
   right: -20px;
-  top: 20px;
+  top: 0;
   display: block;
   text-align: left;
 }
@@ -1367,11 +1397,19 @@ body {
 .project-name {
   position: relative;
   display: block;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
+  transition: all 0.5s;
 }
 
-.project-title {}
+.project-wrap:hover .project-name{
+  color: #64ffda;
+}
+
+.project-title {
+  font-size: 17px;
+  color: #ccd6f6
+}
 
 .project-desc {
   position: relative;
@@ -1380,7 +1418,22 @@ body {
   height: 150px;
   background-color: #112240;
   box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
-  color: #64ffda;
+  color: #a8b2d1;
+  padding: 20px;
+}
+
+.project-link{
+  position: relative;
+  display: block;
+}
+
+.useskill{
+  margin: 10px 0;
+}
+
+.project-link a{
+  margin: 0 5px;
+  color: #8892b0;
 }
 
 .portfolio-wrap {
