@@ -711,7 +711,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  margin: 10px 0px 40px;
+  margin: 10px 0;
   width: 100%;
   font-size: 30px;
   white-space: nowrap;
@@ -739,6 +739,7 @@ body {
   display: grid;
   grid-template-columns: 3fr 2fr;
   gap: 50px;
+  margin-top: 6vw;
 }
 
 .about-left {
@@ -746,23 +747,68 @@ body {
   display: block;
 }
 
-.about-desc {
-  position: relative;
-  display: block;
+.about-left h3{
+  font-size: 2vw;
+  font-weight: 700;
+  text-align: right;
+  color: #8892b0;
+  margin: 10px 0;
 }
 
+/* .about-desc {
+  position: relative;
+  display: block;
+  width: 100%;
+} */
+.experience-wrap{
+  position: relative;
+  display: block;
+  text-align: right;
+
+}
+
+.mywork{
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  color: #8892b0;
+}
+.mywork p{
+  line-height: 1.8;
+}
+.about-period{
+  position: relative;
+  display: inline-block;
+  text-align: right;
+  margin-left: 15px;
+  color: #8892b0;
+}
+.about-period p{
+  line-height: 1.8;
+}
 .about-title {
   position: relative;
   display: block;
-  font-size: 1.5vw;
-  margin-bottom: 15px;
+  font-size: 2vw;
+  font-weight: 700;
+  text-align: center;
+  margin: 40px 0;
+  color: #8892b0;;
+}
+.about-title-decs-wrap{
+  position: relative;
+  display: flex;
+  justify-content: right;
 }
 
 .about-title-desc {
   position: relative;
   display: block;
-  margin: 10px 0;
-  font-size: 0.7vw;
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: right;
+  margin: 1vw 0;
+  color: #8892b0;
 }
 
 .about-subtitle {
@@ -1528,7 +1574,7 @@ body {
 .portfolio-list > li {
   position: relative;
   display: block;
-  height: 320px;
+  height: 330px;
   margin: 20px 10px;
   text-align: center;
   background: #112240;
@@ -1542,9 +1588,10 @@ body {
 .portfolio-list li h5 {
   position: relative;
   display: block;
-  margin: 20px 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   transition: all 0.3s;
 }
 
@@ -1662,7 +1709,7 @@ body {
   margin: 0 10px;
   color: #8892b0;;
   transition: all 0.3s;
-  font-size: 1vw;
+  font-size: 0.7vw;
 }
 
 /* .portmenu::after {
@@ -1717,6 +1764,11 @@ body {
   margin: 5px 5px;
   transition: all 0.3s;
 }
+.useskilllist{
+  position: relative;
+  font-size: 12px;
+}
+
 .box:hover h5{
   color: #64ffda;
 }
