@@ -16,7 +16,7 @@ $(document).ready(function () {
 
 
     let snsWrap = $('.sns-list');
-
+    let night = $('.night');
     let aboutY = $('.about-me').offset().top;
     let contactY = $('.footer').offset().top;
     console.log(contactY);
@@ -31,12 +31,14 @@ $(document).ready(function () {
                 'opacity': '1',
                 "visibility": "visible"
             });
+            night.stop().fadeOut(500)
             // snsWrap.show()
         } else if (temp < aboutY) {
             snsWrap.css({
                 'opacity': '0',
                 "visibility": "hidden"
             });
+            night.stop().fadeIn(500)
             // snsWrap.hide()
         }
     })
