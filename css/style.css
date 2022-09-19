@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+:root {
+  --main-bg-color: #0a192f;
+  --main-port-bg-color: #112240;
+  --main-font-point-color: #ccd6f6;
+  --main-font-color: #8892b0;
+  --point-color: #64ffda;
+  --sub-bg-color: #fff;
+  --sub-font-color: #333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +33,7 @@ img {
 
 html {
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -31,18 +42,18 @@ body {
   font-size: 16px;
   line-height: 1.4;
   letter-spacing: -0.64px;
-  color: #333;
-  overflow-x: hidden;
+  color: var(--main-font-color);
+  background-color: var(--main-bg-color);
   /* background-color: #fff; */
-  background: linear-gradient(#fff, #e9e9e9, #fff);
+  /* background: linear-gradient(#fff, #e9e9e9, #fff); */
 }
 
-#gradient {
+/* #gradient {
   width: 100%;
   height: 100%;
   padding: 0px;
   margin: 0px;
-}
+} */
 
 /* 공통요소 */
 .clearfix::after {
@@ -65,7 +76,7 @@ body {
   font-weight: 600;
   font-family: 'Poppins';
   text-transform: uppercase;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .ml50 {
@@ -82,11 +93,11 @@ body {
 
 .usecolor {
   position: relative;
-  color: #333;
+  color: var(--point-color);
 }
 
 .pointcolor {
-  color: #333;
+  color: var(--point-color);
 }
 
 .usecolor::after {
@@ -96,7 +107,7 @@ body {
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: #333;
+  background-color: var(--point-color);
   transition: width 0.5s;
 }
 
@@ -107,7 +118,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #333;
+  background-color: var(--point-color);
 }
 
 /* SCROLL */
@@ -172,11 +183,11 @@ body {
   font-size: 30px;
   margin: 10px 0;
   transition: all 0.5s;
-  color: #fff;
+  color: var(--main-font-color);
 }
 
 .sns-list li:hover .snsicon {
-  color: #333;
+  color: var(--point-color);
 }
 
 @media all and (max-width:1200px) {
@@ -294,9 +305,8 @@ body {
 
 /* wrap */
 .wrap {
-  /* position: relative;
-  display: block; */
-
+  position: relative;
+  display: block;
 }
 
 .scrolltop {
@@ -314,8 +324,8 @@ body {
   padding: 0 4vw;
   z-index: 9999;
   backdrop-filter: blur(5px);
-  border-top: 1px solid rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--main-font-color);
+  border-bottom: 1px solid var(--main-font-color);
 }
 
 .nav {
@@ -332,7 +342,7 @@ body {
   width: 50px;
   height: 40px;
   color: #fff;
-  background: url('/images/Black\ logo\ -\ no\ background.svg') no-repeat center;
+  background: url('/images/white\ logo\ -\ no\ background.svg') no-repeat center;
   background-size: cover;
 }
 
@@ -358,7 +368,7 @@ body {
   margin: 0 10px;
   font-size: 16px;
   font-weight: 500;
-  color: #333;
+  color: var(--main-font-color);
   transition: all 0.3s;
 }
 
@@ -367,7 +377,7 @@ body {
   display: block;
   font-size: 12px;
   font-weight: 500;
-  color: #e9e9e9;
+  color: #e9e9e959;
 }
 
 .mainmenu::after {
@@ -377,12 +387,12 @@ body {
   bottom: 0;
   width: 0%;
   height: 2px;
-  background-color: #333;
+  background-color: var(--point-color);
   transition: width 0.5s;
 }
 
 .depth1 li a:hover {
-  color: #333;
+  color: var(--point-color);
 }
 
 .depth1 li:hover .mainmenu::after {
@@ -392,7 +402,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 2px;
-  background-color: #333;
+  background-color: var(--point-color);
 }
 
 
@@ -417,8 +427,8 @@ body {
     padding: 0 4vw;
     z-index: 9999;
     backdrop-filter: blur(5px);
-    border-top: 1px solid #e9e9e9;
-    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid var(--main-font-color);
+    border-bottom: 1px solid var(--main-font-color);
   }
 
   .scrolltop {
@@ -465,7 +475,7 @@ body {
     margin: 0 10px;
     font-size: 16px;
     font-weight: 500;
-    color: #333;
+    color: var(--main-font-color);
     transition: all 0.3s;
   }
 
@@ -474,7 +484,7 @@ body {
     display: block;
     font-size: 12px;
     font-weight: 500;
-    color: #e9e9e954;
+    color: #e9e9e9;
   }
 
   .mainmenu::after {
@@ -484,7 +494,7 @@ body {
     bottom: 0;
     width: 0%;
     height: 2px;
-    background-color: #888;
+    background-color: var(--point-color);
     transition: width 0.5s;
   }
 
@@ -499,7 +509,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: var(--point-color);
   }
 
 
@@ -555,7 +565,7 @@ body {
 .dev {
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 1px #333;
+  -webkit-text-stroke: 1px var(--main-font-point-color);
   transition: all 3s;
   transition-delay: 0.1s;
 }
@@ -567,9 +577,9 @@ body {
   bottom: 0;
   width: 0;
   height: 5px;
-  background-color: #333;
+  background-color: var(--point-color);
   transition: all 0.3s;
-  color: #333;
+  color: var(--point-color);
 }
 
 .intro-desc {
@@ -583,11 +593,11 @@ body {
 .me {
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 1px #333;
+  -webkit-text-stroke: 1px var(--point-color);
   transition: all 3s;
   transition-delay: 0.1s;
   font-size: 2vw;
-  color: #333;
+  color: var(--point-color);
 }
 
 /* .me::after {
@@ -659,7 +669,7 @@ body {
   .dev {
     position: relative;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke: 1px var(--point-color);
     transition: all 3s;
     transition-delay: 0.1s
   }
@@ -671,7 +681,7 @@ body {
     bottom: 0;
     width: 0;
     height: 5px;
-    background-color: #888;
+    background-color: var(--point-color);
     transition: all 0.3s;
   }
 
@@ -708,11 +718,11 @@ body {
   .me {
     position: relative;
     color: transparent;
-    -webkit-text-stroke: 1px #333;
+    -webkit-text-stroke: 1px var(--point-color);
     transition: all 3s;
     transition-delay: 0.1s;
     font-size: 3vw;
-    color: #333;
+    color: var(--point-color);
   }
 }
 
@@ -729,7 +739,7 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .about-me {
@@ -747,7 +757,7 @@ body {
   content: '';
   position: relative;
   display: inline-block;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .about-me::after {
@@ -757,7 +767,7 @@ body {
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #333;
+  background-color: var(--main-font-color);
 }
 
 
@@ -777,8 +787,6 @@ body {
   font-size: 2vw;
   font-weight: 700;
   text-align: right;
-  color: #333;
-  margin: 10px 0;
 }
 
 /* .about-desc {
@@ -790,14 +798,13 @@ body {
   position: relative;
   display: block;
   text-align: right;
-
 }
 
 .mywork {
   position: relative;
   display: inline-block;
   text-align: right;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .mywork p {
@@ -809,7 +816,7 @@ body {
   display: inline-block;
   text-align: right;
   margin-left: 15px;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .about-period p {
@@ -824,9 +831,7 @@ body {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   margin: 40px 0;
-  color: #333;
-  ;
-
+  color: var(--main-font-color);
 }
 
 .about-title-decs-wrap {
@@ -842,7 +847,7 @@ body {
   line-height: 1.8;
   text-align: right;
   margin: 1vw 0;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .about-subtitle {
@@ -954,7 +959,7 @@ body {
     font-size: 4vw;
     font-weight: 700;
     text-align: center;
-    color: #333;
+    color: var(--main-font-color);
     margin: 20px 0;
   }
 
@@ -1071,7 +1076,7 @@ body {
   content: '';
   position: relative;
   display: inline-block;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .myskill::after {
@@ -1081,7 +1086,7 @@ body {
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #333;
+  background-color: var(--main-font-color);
 }
 
 .skill-container {
@@ -1100,7 +1105,7 @@ body {
 }
 
 .mainskill {
-  color: #333;
+  color: var(--point-color);
 }
 
 .skill-list {
@@ -1126,6 +1131,13 @@ body {
   font-size: 60px;
   height: 84px;
   margin-bottom: 10px;
+}
+
+.split span {
+  opacity: 0;
+  display: inline-block;
+  min-width: 1vw;
+  transform: translateY(30px);
 }
 
 @media all and (max-width:750px) {
@@ -1156,7 +1168,7 @@ body {
     content: '';
     position: relative;
     display: inline-block;
-    color: #333;
+    color: var(--main-font-color);
   }
 
   .myskill::after {
@@ -1166,7 +1178,7 @@ body {
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #333;
+    background-color: var(--main-font-color);
   }
 
   .skill-container {
@@ -1185,7 +1197,7 @@ body {
   }
 
   .mainskill {
-    color: #333;
+    color: var(--point-color);
   }
 
   .skill-list {
@@ -1210,13 +1222,14 @@ body {
     height: 84px;
     margin-bottom: 20px;
   }
-  .skill-desc{
+
+  .skill-desc {
     font-size: 2vw;
   }
 }
 
-@media all and (max-width:600px){
-  .skill-desc{
+@media all and (max-width:600px) {
+  .skill-desc {
     font-size: 3vw;
   }
 }
@@ -1245,7 +1258,7 @@ body {
   content: '';
   position: relative;
   display: inline-block;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .mymbti::after {
@@ -1255,7 +1268,7 @@ body {
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #333;
+  background-color: var(--main-font-color);
 }
 
 .mbti-container {
@@ -1277,7 +1290,7 @@ body {
 }
 
 .mainmbti {
-  color: #333;
+  color: var(--point-color);
 }
 
 
@@ -1289,7 +1302,7 @@ body {
   display: block;
   height: 450px;
   float: left;
-  background-color: #e9e9e9;
+  background-color: rgba(20, 90, 120, 0.4);
   padding: 20px;
   border-radius: 15px;
 }
@@ -1301,7 +1314,7 @@ body {
 }
 
 .mbti-depth1 li {
-  color: #333;
+  color: var(--main-font-point-color-color);
   ;
 }
 
@@ -1389,7 +1402,7 @@ body {
   }
 
   .mainmbti {
-    color: #333;
+    color: var(--point-color);
   }
 
 
@@ -1401,7 +1414,7 @@ body {
     display: block;
     height: 100%;
     float: none;
-    background-color: #e9e9e9;
+    background-color: rgba(20, 90, 120, 0.4);
     padding: 20px;
     border-radius: 15px;
   }
@@ -1469,7 +1482,7 @@ body {
   content: '';
   position: relative;
   display: inline-block;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .myportfolio::after {
@@ -1479,7 +1492,7 @@ body {
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #333;
+  background-color: var(--main-font-color);
 }
 
 .project-wrapper {
@@ -1532,17 +1545,12 @@ body {
   transition: all 1s ease;
 }
 
-.portimg img:hover {
-  opacity: 1;
-  box-shadow: 0 0px 10px 0px #333;
-
-}
-
 .project-content {
   position: relative;
   right: 20px;
   top: 0;
   display: block;
+  width: 45%;
   text-align: right;
 }
 
@@ -1563,23 +1571,32 @@ body {
 }
 
 .project-wrap:hover .project-name {
-  color: #333;
+  color: var(--point-color);
   font-size: 32px;
+}
+
+.project-wrap:hover .portimg img {
+  opacity: 1;
+  box-shadow: 0 0px 10px 0px #e9e9e9;
 }
 
 .project-title {
   font-size: 17px;
-  color: #333
+  color: var(--main-font-color)
+}
+
+.project-title a {
+  color: var(--main-font-color);
 }
 
 .project-desc {
   position: relative;
   display: block;
-  width: 450px;
+  width: 100%;
   height: 150px;
-  background-color: #e9e9e9;
+  background-color: var(--main-port-bg-color);
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-  color: #333;
+  color: var(--main-font-color);
   padding: 20px;
 }
 
@@ -1594,7 +1611,7 @@ body {
 
 .project-link a {
   margin: 0 5px;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .portfolio-wrap {
@@ -1628,8 +1645,8 @@ body {
   width: 50px;
   height: 50px;
   font-size: 20px;
-  color: #999;
-  border: 1px solid #999;
+  color: var(--main-font-point-color);
+  border: 1px solid var(--main-font-color);
   background: transparent;
   cursor: pointer;
 }
@@ -1643,8 +1660,8 @@ body {
   height: 50px;
   font-size: 20px;
   font-weight: 400;
-  color: #999;
-  border: 1px solid #999;
+  color: var(--main-font-point-color);
+  border: 1px solid var(--main-font-color);
   background: transparent;
   cursor: pointer;
 }
@@ -1683,7 +1700,7 @@ body {
   display: block;
   width: 100%;
   height: 500px;
-  border: 2px solid #e9e9e9;
+  border: 2px solid var(--main-font-point-color);
   border-radius: 5px 5px 5px 80px;
   transition: all 0.2s;
 }
@@ -1730,7 +1747,17 @@ body {
   padding-right: 20px;
 }
 
-.port-num::after{
+.port-num::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+}
+
+.port-num::after {
   content: '';
   position: absolute;
   top: 40px;
@@ -1740,7 +1767,7 @@ body {
   transition: all 0.5s;
 }
 
-.port-slide:hover .port-num::after{
+.port-slide:hover .port-num::after {
   content: '';
   position: absolute;
   top: 40px;
@@ -1809,7 +1836,7 @@ body {
     content: '';
     position: relative;
     display: inline-block;
-    color: #fff;
+    color: var(--main-font-color);
   }
 
   .myportfolio::after {
@@ -1819,7 +1846,7 @@ body {
     width: 300px;
     height: 1px;
     margin-left: 20px;
-    background-color: #fff;
+    background-color: var(--main-font-color);
   }
 
   .project-wrapper {
@@ -1912,9 +1939,9 @@ body {
     width: 80%;
     margin: 0 auto;
     height: 150px;
-    background-color: #e9e9e9;
+    background-color: var(--main-port-bg-color);
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-    color: #a8b2d1;
+    color: var(--main-font-color);
   }
 
   .project-list-title {
@@ -1963,8 +1990,8 @@ body {
     width: 50px;
     height: 50px;
     font-size: 20px;
-    color: #999;
-    border: 1px solid #999;
+    color: var(--main-font-point-color);
+    border: 1px solid var(--main-font-color);
     background: transparent;
     cursor: pointer;
   }
@@ -1978,7 +2005,7 @@ body {
     height: 50px;
     font-size: 20px;
     font-weight: 400;
-    color: #999;
+    color: var(--main-font-point-color);
     border: 1px solid #999;
     background: transparent;
     cursor: pointer;
@@ -2018,7 +2045,7 @@ body {
     display: block;
     width: 100%;
     height: 500px;
-    border: 2px solid #e9e9e9;
+    border: 2px solid var(--main-font-color);
     border-radius: 5px 5px 5px 80px;
     transition: all 0.2s;
   }
@@ -2102,19 +2129,21 @@ body {
     margin: 20px 10px;
     text-align: center;
   }
+
   .project-link {
     position: relative;
     display: block;
     font-size: 13px;
   }
+
   .project-desc {
     position: relative;
     display: block;
-    width: 450px;
+    width: 100%;
     height: 150px;
-    background-color: #e9e9e9;
+    background-color: var(--main-port-bg-color);
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
-    color: #333;
+    color: var(--main-font-color);
     padding: 20px;
     font-size: 10px;
   }
@@ -2149,7 +2178,7 @@ body {
   content: '';
   position: relative;
   display: inline-block;
-  color: #333;
+  color: var(--main-font-color);
 }
 
 .life-me::after {
@@ -2159,7 +2188,7 @@ body {
   width: 300px;
   height: 1px;
   margin-left: 20px;
-  background-color: #333;
+  background-color: var(--main-font-color);
 }
 
 
@@ -2948,7 +2977,7 @@ body {
 }
 
 /* 컨택 */
-.contact {
+/* .contact {
   position: relative;
   display: block;
   width: 100%;
@@ -3059,7 +3088,7 @@ body {
     margin: 0 2vw;
   }
 
-}
+} */
 
 /* 푸터 */
 .footer {
