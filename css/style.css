@@ -87,9 +87,16 @@ body {
   margin-right: 30px;
 }
 
+.right{
+  position: relative;
+  display: block;
+  float: right;
+}
+
 .size {
   font-size: 13px;
 }
+
 
 .usecolor {
   position: relative;
@@ -1599,6 +1606,24 @@ body {
   color: var(--main-font-color);
   padding: 20px;
 }
+.mainport{
+  position: relative;
+  display: block;
+  width: 30%;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  border: 1px solid var(--main-font-color);
+  border-radius: 5px;
+  color: var(--main-font-color);
+  transition: all 0.5s;
+}
+
+.mainport:hover{
+  border: 1px solid var(--point-color);
+  color: var(--point-color);
+}
 
 .project-link {
   position: relative;
@@ -1792,18 +1817,44 @@ body {
   margin-bottom: 8rem;
 }
 
+.port-btn-box{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .port-txt-box span {
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 11px;
+  line-height: 1.8;
   padding: 10px;
+  width: 30%;
   color: #fff;
   cursor: pointer;
   border: 1px solid #fff;
+  text-align: center;
+  transition: all 1s;
+}
+.port-txt-box span:hover {
+  color: var(--point-color);
+  border: 1px solid var(--point-color);
 }
 
-.port-txt-box span:last-child {
+.vue-port{
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.vue-port span{
+  font-size: 11px;
+  line-height: 1.8;
   padding: 10px;
-  margin-left: 10px;
+  width: 21%;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #fff;
+  text-align: center;
 }
 
 
