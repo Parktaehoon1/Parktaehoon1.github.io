@@ -65,10 +65,12 @@ body {
   width: 100%;
   clear: both;
 }
+
 .left {
   float: left;
   font-size: 20px;
 }
+
 .right {
   float: right;
   text-align: right;
@@ -460,8 +462,7 @@ body {
     width: 50px;
     height: 40px;
     color: #fff;
-    background: url("/images/White\ logo\ -\ no\ background.svg") no-repeat
-      center;
+    background: url("/images/White\ logo\ -\ no\ background.svg") no-repeat center;
     background-size: cover;
   }
 
@@ -1427,8 +1428,7 @@ body {
     height: 100%;
   }
 
-  .mbti-depth1 li {
-  }
+  .mbti-depth1 li {}
 
   .mbti-list-title {
     position: relative;
@@ -1597,6 +1597,7 @@ body {
   color: var(--main-font-color);
   padding: 20px;
 }
+
 .mainport {
   position: relative;
   display: block;
@@ -1681,11 +1682,9 @@ body {
   cursor: pointer;
 }
 
-.port-scrollbar {
-}
+.port-scrollbar {}
 
-.swiper-scrollbar-drag {
-}
+.swiper-scrollbar-drag {}
 
 .sw-port {
   position: relative;
@@ -1826,6 +1825,7 @@ body {
   text-align: center;
   transition: all 1s;
 }
+
 .port-txt-box span:hover {
   color: var(--point-color);
   border: 1px solid var(--point-color);
@@ -1837,6 +1837,7 @@ body {
   width: 100%;
   justify-content: space-between;
 }
+
 .vue-port span {
   font-size: 11px;
   line-height: 1.8;
@@ -1969,8 +1970,7 @@ body {
     font-weight: 700;
   }
 
-  .project-title {
-  }
+  .project-title {}
 
   .project-desc {
     position: relative;
@@ -2048,11 +2048,9 @@ body {
     cursor: pointer;
   }
 
-  .port-scrollbar {
-  }
+  .port-scrollbar {}
 
-  .swiper-scrollbar-drag {
-  }
+  .swiper-scrollbar-drag {}
 
   .sw-port {
     position: relative;
@@ -2158,7 +2156,7 @@ body {
 }
 
 @media all and (max-width: 650px) {
-  .portfolio-list > li {
+  .portfolio-list>li {
     position: relative;
     display: block;
     width: 90%;
@@ -2235,6 +2233,7 @@ body {
   margin: 3vw 0;
   font-family: "Poppins", sans-serif;
 }
+
 .life-point {
   color: var(--point-color);
   opacity: 0;
@@ -2253,6 +2252,7 @@ body {
   align-items: flex-end;
   margin-bottom: 30px;
 }
+
 .life-routine {
   position: relative;
   display: block;
@@ -2263,6 +2263,7 @@ body {
   transition: all 0.5s;
   line-height: 1.8;
 }
+
 .life-routine-hover {
   position: absolute;
   left: 0;
@@ -2275,9 +2276,11 @@ body {
   transition: all 0.8s;
   z-index: 999;
 }
+
 .life-routine:hover {
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
+
 .life-routine:hover .life-routine-hover {
   opacity: 1;
 }
@@ -2317,6 +2320,7 @@ body {
   width: 100%;
   scale: 1.1;
 }
+
 /* .life-desc {
   position: relative;
   display: block;
@@ -2332,6 +2336,7 @@ body {
   font-size: 17px;
   line-height: 1.8;
 }
+
 .life-challenge strong {
   padding: 20px;
   z-index: 1;
@@ -2344,13 +2349,15 @@ body {
   bottom: 0;
   color: #e9e9e9;
 }
+
 .life-challenge-img {
   position: relative;
   display: block;
   width: 100%;
-  height: 100%;
+  height: 350px;
   opacity: 1;
 }
+
 .hover-chall {
   position: relative;
   display: block;
@@ -2465,8 +2472,8 @@ body {
 .life-sociable {
   position: relative;
   display: block;
-  height: 300px;
-  margin-bottom: 100px;
+  height: 340px;
+  margin-bottom: 60px;
   overflow: hidden;
   transition: all 0.5s;
 }
@@ -2599,18 +2606,20 @@ body {
 
 .life-ment-top {
   padding: 20px;
-  font-size: 0.8vw;
+  font-size: 1vw;
   color: #fff;
 }
+
 .life-ment-title {
   font-size: 2vw;
 }
 
 .life-ment-bottom {
   padding: 10px;
-  font-size: 0.8vw;
+  font-size: 1vw;
   color: #fff;
 }
+
 .life-ment-title-bt {
   font-size: 1.5vw;
 }
@@ -2739,9 +2748,11 @@ body {
     z-index: 999;
     text-align: center;
   }
+
   .life-routine:hover {
     box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
   }
+
   .life-routine:hover .life-routine-hover {
     opacity: 1;
   }
@@ -2761,6 +2772,7 @@ body {
     font-size: 17px;
     line-height: 1.8;
   }
+
   .life-challenge strong {
     padding: 20px;
     z-index: 1;
@@ -2773,13 +2785,15 @@ body {
     bottom: 0;
     color: #e9e9e9;
   }
+
   .life-challenge-img {
     position: relative;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 350px;
     opacity: 1;
   }
+
   .hover-chall {
     position: relative;
     display: block;
@@ -2964,6 +2978,15 @@ body {
     line-height: 1.8;
     text-align: center;
   }
+
+
+  .life-ment-top {
+    visibility: hidden;
+  }
+
+  .life-ment-bottom {
+    visibility: hidden;
+  }
 }
 
 /* vision */
@@ -3007,8 +3030,7 @@ body {
   background-color: #333;
 }
 
-.swiper-wrapper {
-}
+.swiper-wrapper {}
 
 .sw-vision {
   position: relative;
@@ -3039,6 +3061,7 @@ body {
   width: 90%;
   margin: 15px auto;
 }
+
 .sw-vision-title P {
   font-size: 1vw;
   text-align: left;
@@ -3087,9 +3110,11 @@ body {
     width: 100%;
     height: 100%;
   }
+
   .vision .inner {
     padding: 20px;
   }
+
   .vision-container {
     position: relative;
     display: block;
@@ -3123,8 +3148,7 @@ body {
     background-color: #333;
   }
 
-  .swiper-wrapper {
-  }
+  .swiper-wrapper {}
 
   .sw-vision {
     position: relative;
@@ -3155,6 +3179,7 @@ body {
     width: 90%;
     margin: 15px auto;
   }
+
   .sw-vision-title P {
     font-size: 4vw;
     text-align: left;
