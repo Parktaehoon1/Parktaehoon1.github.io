@@ -100,6 +100,21 @@ $(document).ready(function () {
     delay: 10,
     time: 2500,
   });
+
+  let skill_hover = $(".skill-hover");
+  let skill_txtbox = $(".skill-txtbox");
+
+  $.each(skill_hover, function () {
+    $(this).mousemove(function (e) {
+      var offset = $(this).offset();
+      $(this)
+        .find(skill_txtbox)
+        .css("left", `${Math.ceil(e.pageX - offset.left)}px`);
+      $(this)
+        .find(skill_txtbox)
+        .css("top", `${Math.ceil(e.pageY - offset.top + 20)}px`);
+    });
+  });
 });
 
 window.onload = function () {
