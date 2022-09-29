@@ -1698,7 +1698,8 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  overflow: visible;
+  overflow: hidden;
+  width: 100vw;
 }
 
 .swiper-wrapper {
