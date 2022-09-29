@@ -59,6 +59,7 @@ $(document).ready(function () {
     });
   });
 
+  //skill 부분
   setTimeout(function () {
     gsap.to(".split span", {
       duration: 1,
@@ -103,7 +104,7 @@ $(document).ready(function () {
 
   let skill_hover = $(".skill-hover");
   let skill_txtbox = $(".skill-txtbox");
-
+  // hover 했을 때 나타나기
   $.each(skill_hover, function () {
     $(this).mousemove(function (e) {
       var offset = $(this).offset();
@@ -118,116 +119,13 @@ $(document).ready(function () {
 });
 
 window.onload = function () {
-  // var colors = new Array(
-  //     [255, 255, 255],
-  //     [230, 230, 230],
-  //     [255, 255, 255],
-  //     [240, 240, 240],
-  //     [255, 255, 255],
-  //     [230, 230, 230],
-  // );
-
-  // var step = 0;
-  // //color table indices for:
-  // // current color left
-  // // next color left
-  // // current color right
-  // // next color right
-  // var colorIndices = [0, 1, 2, 3];
-
-  // //transition speed
-  // var gradientSpeed = 0.002;
-
-  // function updateGradient() {
-
-  //     if ($ === undefined) return;
-
-  //     var c0_0 = colors[colorIndices[0]];
-  //     var c0_1 = colors[colorIndices[1]];
-  //     var c1_0 = colors[colorIndices[2]];
-  //     var c1_1 = colors[colorIndices[3]];
-
-  //     var istep = 1 - step;
-  //     var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-  //     var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-  //     var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-  //     var color1 = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
-
-  //     var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-  //     var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-  //     var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-  //     var color2 = "rgb(" + r2 + "," + g2 + "," + b2 + ")";
-
-  //     $('#gradient').css({
-  //         background: "-webkit-gradient(linear, left top, right top, from(" + color1 + "), to(" + color2 + "))"
-  //     }).css({
-  //         background: "-moz-linear-gradient(left, " + color1 + " 0%, " + color2 + " 100%)"
-  //     });
-
-  //     step += gradientSpeed;
-  //     if (step >= 1) {
-  //         step %= 1;
-  //         colorIndices[0] = colorIndices[1];
-  //         colorIndices[2] = colorIndices[3];
-
-  //         //pick two new target color indices
-  //         //do not pick the same as the current one
-  //         colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-  //         colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-
-  //     }
-  // }
-
-  // setInterval(updateGradient, 10);
-
   AOS.init();
+
   let dev = document.querySelector(".dev");
   console.log(dev);
   dev.style.color = "#ccd6f6";
 
-  // document.querySelectorAll(".depth1 li a").forEach(li => {
-  //     li.addEventListener("click", e => {
-  //         e.preventDefault();
-  //         document.querySelector(li.getAttribute("href")).scrollIntoView({
-  //             behavior: "smooth"
-  //         })
-  //     })
-  // })
-
-  // let btAll = document.getElementById('btAll');
-  // let btClone = document.getElementById('btClone');
-  // let btStudy = document.getElementById('btStudy');
-  // let btVue = document.getElementById('btVue');
-
-  // btAll.addEventListener('click', function () {
-  //     showPort('all');
-  // })
-  // btClone.addEventListener('click', function () {
-  //     showPort('clone');
-  // })
-  // btStudy.addEventListener('click', function () {
-  //     showPort('study');
-  // })
-  // btVue.addEventListener('click', function () {
-  //     showPort('vue');
-  // })
-
-  // let boxs = document.querySelectorAll('.box');
-  // console.log("전체박스", boxs);
-
-  // // 올바른 코드
-  // function showPort(_str) {
-  //     console.log("fn 안의 _str", _str)
-  //     boxs.forEach(function (item) {
-  //         let cate = item.getAttribute('data-cate');
-  //         if (_str == 'all' || _str == cate) {
-  //             item.style.display = 'block';
-  //         } else {
-  //             item.style.display = 'none';
-  //         }
-  //     })
-  // }
-
+  // chat.js 부분
   const ctx = document.getElementById("myChart");
   const myChart = new Chart(ctx, {
     type: "radar",
@@ -288,51 +186,18 @@ window.onload = function () {
         backgroundColor: "#000000",
       },
       chartArea: {
-        // backgroundColor:'transparent',
         backgroundColor: "rgba(0,0,0,1)",
       },
     },
-    // animation: {
-    //     onComplete: () => {
-    //         delayed = true;
-    //     },
-    //     delay: (context) => {
-    //         let delay = 0;
-    //         if (context.type === 'data' && context.mode === 'default' && !delayed) {
-    //             delay = context.dataIndex * 300 + context.datasetIndex * 100;
-    //         }
-    //         return delay;
-    //     },
-    // }
   });
-
-  new Swiper(".sw-vision", {
-    spaceBetween: 50,
-    slidesPerView: 1,
-    autoplay: {
-      delay: 6000,
-    },
-    // centeredSlides: true,
-    // loop: true,
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev"
-    // }
-    pagination: {
-      el: ".sw-vision-pg",
-    },
-    breakpoints: {
-      // when window width is >= 320px
-      700: {
-        slidesPerView: 2,
-        spaceBetween: 50,
-      },
-    },
-  });
-
+  // portfolio swiper 부분
   let swPort = new Swiper(".sw-port", {
     direction: "horizontal",
     effect: "slide",
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
     slidesPerView: "auto",
     slidesPerGroup: 1,
     loopAdditionalSlides: 1,
@@ -347,6 +212,24 @@ window.onload = function () {
       el: ".port-scrollbar",
       hide: false,
       draggable: true,
+    },
+  });
+
+  // vision swiper 부분
+  new Swiper(".sw-vision", {
+    spaceBetween: 50,
+    slidesPerView: 1,
+    autoplay: {
+      delay: 6000,
+    },
+    pagination: {
+      el: ".sw-vision-pg",
+    },
+    breakpoints: {
+      700: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
     },
   });
 };

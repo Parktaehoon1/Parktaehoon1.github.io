@@ -46,16 +46,7 @@ body {
   letter-spacing: -0.64px;
   color: var(--main-font-color);
   background-color: var(--main-bg-color);
-  /* background-color: #fff; */
-  /* background: linear-gradient(#fff, #e9e9e9, #fff); */
 }
-
-/* #gradient {
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-} */
 
 /* 공통요소 */
 .clearfix::after {
@@ -99,6 +90,7 @@ body {
   margin-right: 30px;
 }
 
+/* portfolio 쪽 */
 .right {
   position: relative;
   display: block;
@@ -253,6 +245,7 @@ body {
   }
 }
 
+/* 모바일 버전 */
 .mb-wrap {
   position: fixed;
   left: 0;
@@ -613,17 +606,6 @@ body {
   color: var(--point-color);
 }
 
-/* .me::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 5px;
-  background-color: #64ffda;
-  transition: all 0.3s;
-  color: #64ffda;
-} */
 .intro-pic {
   position: absolute;
   right: 0;
@@ -725,7 +707,6 @@ body {
     display: block;
     width: 100%;
     height: 100%;
-    /* border-radius: 50%; */
   }
 
   .me {
@@ -801,11 +782,6 @@ body {
   text-align: right;
 }
 
-/* .about-desc {
-  position: relative;
-  display: block;
-  width: 100%;
-} */
 .experience-wrap {
   position: relative;
   display: block;
@@ -1683,7 +1659,6 @@ body {
   position: relative;
   display: block;
   text-transform: uppercase;
-  /* text-align: center; */
   font-size: 3vw;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
@@ -1717,12 +1692,6 @@ body {
   border: 1px solid var(--main-font-color);
   background: transparent;
   cursor: pointer;
-}
-
-.port-scrollbar {
-}
-
-.swiper-scrollbar-drag {
 }
 
 .sw-port {
@@ -1939,7 +1908,6 @@ body {
     position: relative;
     display: block;
     justify-content: start;
-    /* margin: 150px 0; */
     margin-bottom: 1vw;
   }
 
@@ -2075,7 +2043,6 @@ body {
     position: relative;
     display: block;
     text-transform: uppercase;
-    /* text-align: center; */
     font-size: 3vw;
     font-weight: 600;
     font-family: "Poppins", sans-serif;
@@ -2109,12 +2076,6 @@ body {
     border: 1px solid #999;
     background: transparent;
     cursor: pointer;
-  }
-
-  .port-scrollbar {
-  }
-
-  .swiper-scrollbar-drag {
   }
 
   .sw-port {
@@ -2387,14 +2348,6 @@ body {
   scale: 1.1;
 }
 
-/* .life-desc {
-  position: relative;
-  display: block;
-  width: 35%;
-  font-size: 17px;
-  line-height: 1.8;
-  text-align: right;
-} */
 .life-challenge {
   position: relative;
   display: block;
@@ -3296,120 +3249,6 @@ body {
   }
 }
 
-/* 컨택 */
-/* .contact {
-  position: relative;
-  display: block;
-  width: 100%;
-}
-
-.contact-me {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin: 10px 0px 40px;
-  width: 100%;
-  font-size: 30px;
-  white-space: nowrap;
-  text-shadow: 3px 5px 2px #474747;
-}
-
-.contact-me::before {
-  content: '';
-  position: relative;
-  display: inline-block;
-  color: #333;
-}
-
-.contact-me::after {
-  content: "";
-  display: inline-block;
-  position: relative;
-  width: 300px;
-  height: 1px;
-  margin-left: 20px;
-  background-color: #333;
-}
-
-.contact-list {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin: 5vw 0;
-}
-
-.contact-list a {
-  position: relative;
-  display: block;
-  font-size: 2vw;
-  margin: 0 2vw;
-}
-
-@media all and (max-width:1200px) {
-  .contact {
-    position: relative;
-    display: block;
-    width: 100%;
-  }
-
-  .contact .inner {
-    position: relative;
-    display: block;
-    padding: 0 20px;
-  }
-
-  .contact-me {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 10px 0px 40px;
-    width: 100%;
-    font-size: 30px;
-    white-space: nowrap;
-    text-shadow: 3px 5px 2px #474747;
-  }
-
-  .contact-me::before {
-    content: '';
-    position: relative;
-    display: inline-block;
-    color: #333;
-  }
-
-  .contact-me::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: 300px;
-    height: 1px;
-    margin-left: 20px;
-    background-color: #333;
-  }
-
-  .contact-list {
-    position: relative;
-    display: flex;
-    justify-content: center;
-  }
-
-  .contact-list a {
-    position: relative;
-    display: block;
-    font-size: 3vw;
-    margin: 0 2vw;
-  }
-}
-
-@media all and (max-width:700px) {
-  .contact-list a {
-    position: relative;
-    display: block;
-    font-size: 4vw;
-    margin: 0 2vw;
-  }
-
-} */
-
 /* 푸터 */
 .footer {
   position: relative;
@@ -3420,4 +3259,34 @@ body {
   height: 80px;
   margin: 10px 0;
   font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.footer .inner {
+  position: relative;
+  display: block;
+  width: 1200px;
+}
+
+@media all and (max-width: 1200px) {
+  .footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+
+  .footer .inner {
+    position: relative;
+    display: block;
+    width: 1200px;
+    padding: 0 20px;
+  }
 }
