@@ -14,33 +14,27 @@ $(document).ready(function () {
     mbWrap.stop().fadeOut(500);
   });
 
-  let snsWrap = $(".sns-list");
-  let night = $(".night");
-  let aboutY = $(".about-me").offset().top;
-  let contactY = $(".footer").offset().top;
-  console.log(contactY);
-  // console.log("about의 Y값",aboutY)
-  $(window).scroll(function () {
-    // 현재 스크롤바의 위치
-
-    let temp = snsWrap.offset().top;
-    // console.log(temp)
-    if (temp > aboutY) {
-      snsWrap.css({
-        opacity: "1",
-        visibility: "visible",
-      });
-      night.stop().fadeOut(500);
-      // snsWrap.show()
-    } else if (temp < aboutY) {
-      snsWrap.css({
-        opacity: "0",
-        visibility: "hidden",
-      });
-      night.stop().fadeIn(500);
-      // snsWrap.hide()
-    }
-  });
+  // let snsWrap = $(".sns-list");
+  // let sns = $(".sns");
+  // let aboutY = $(".about-me").offset().top;
+  // let contactY = $(".footer").offset().top;
+  // console.log(contactY);
+  // // console.log("about의 Y값",aboutY)
+  // $(window).scroll(function () {
+  //   // 현재 스크롤바의 위치
+  //   let tempSns = sns.offset().top;
+  //   if (tempSns > aboutY) {
+  //     sns.css({
+  //       opacity: "1",
+  //       visibility: "visible",
+  //     });
+  //   } else if (tempSns < aboutY) {
+  //     sns.css({
+  //       opacity: "0",
+  //       visibility: "hidden",
+  //     });
+  //   }
+  // });
 
   //jQuery for page scrolling feature - requires jQuery Easing plugin
   $(function () {

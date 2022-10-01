@@ -157,9 +157,22 @@ body {
 .sns {
   position: fixed;
   left: 70px;
-  bottom: 30px;
+  bottom: 0;
   display: block;
+  text-align: center;
   z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.sns::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 2px;
+  margin: 0 auto;
+  height: 100px;
+  background-color: var(--main-font-color);
 }
 
 .sns-show {
@@ -176,9 +189,9 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  opacity: 0;
+  /* opacity: 0;
   visibility: hidden;
-  transition: all 0.5s;
+  transition: all 0.5s; */
 }
 
 .sns-list li {
@@ -299,6 +312,7 @@ body {
   display: none;
   font-size: 30px;
   cursor: pointer;
+  color: #fff;
   z-index: 99999;
 }
 
@@ -349,7 +363,7 @@ body {
   width: 50px;
   height: 40px;
   color: #fff;
-  background: url("/images/White\ logo\ -\ no\ background.svg") no-repeat center;
+  background: url("/images/Black\ logo\ -\ no\ background.svg") no-repeat center;
   background-size: cover;
 }
 
@@ -384,7 +398,7 @@ body {
   display: block;
   font-size: 12px;
   font-weight: 500;
-  color: #e9e9e959;
+  color: var(--main-font-point-color);
 }
 
 .mainmenu::after {
@@ -534,8 +548,11 @@ body {
 .introduce {
   position: relative;
   display: block;
+  width: 100vw;
   height: 100vh;
   padding-left: 80px;
+  background: url("/images/proofile11.png") no-repeat left;
+  background-size: cover;
 }
 
 .intro-container {
@@ -546,7 +563,7 @@ body {
 
 .intro-txt {
   position: absolute;
-  left: 10%;
+  left: 40%;
   top: 50%;
   transform: translateY(-50%);
   display: block;
@@ -599,11 +616,11 @@ body {
 .me {
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 1px var(--point-color);
+  -webkit-text-stroke: 1px var(--main-font-color);
   transition: all 3s;
   transition-delay: 0.1s;
   font-size: 2vw;
-  color: var(--point-color);
+  color: var(--main-font-color);
 }
 
 .intro-pic {
@@ -627,8 +644,11 @@ body {
   .introduce {
     position: relative;
     display: block;
+    width: 100vw;
     height: 100vh;
-    padding-left: 0;
+    padding-left: 80px;
+    background: url("/images/background.png") no-repeat left;
+    background-size: cover;
   }
 
   .intro-container {
@@ -639,14 +659,14 @@ body {
 
   .intro-txt {
     position: absolute;
-    left: 80px;
+    left: -20px;
     top: 50%;
     transform: translateY(-50%);
     display: block;
-    width: 60vw;
+    width: 90%;
     font-family: "Poppins";
     z-index: 999;
-    font-size: 7vw;
+    font-size: 7.5vw;
     font-weight: 700;
   }
 
@@ -664,7 +684,7 @@ body {
   .dev {
     position: relative;
     color: transparent;
-    -webkit-text-stroke: 1px var(--point-color);
+    -webkit-text-stroke: 1px var(--main-font-point-color);
     transition: all 3s;
     transition-delay: 0.1s;
   }
@@ -676,7 +696,7 @@ body {
     bottom: 0;
     width: 0;
     height: 5px;
-    background-color: var(--point-color);
+    background-color: var(--main-font-point-color);
     transition: all 0.3s;
   }
 
@@ -687,8 +707,9 @@ body {
   .intro-desc {
     position: relative;
     display: block;
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: 400;
+    color: var(--sub-bg-color);
     font-family: "JSDongkang-Regular";
   }
 
@@ -715,7 +736,7 @@ body {
     -webkit-text-stroke: 1px var(--point-color);
     transition: all 3s;
     transition-delay: 0.1s;
-    font-size: 3vw;
+    font-size: 5vw;
     color: var(--point-color);
   }
 }
@@ -779,19 +800,19 @@ body {
 .about-left h3 {
   font-size: 2vw;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
 }
 
 .experience-wrap {
   position: relative;
   display: block;
-  text-align: right;
+  text-align: left;
 }
 
 .mywork {
   position: relative;
   display: inline-block;
-  text-align: right;
+  margin-left: 20px;
   color: var(--main-font-color);
 }
 
@@ -802,8 +823,6 @@ body {
 .about-period {
   position: relative;
   display: inline-block;
-  text-align: right;
-  margin-left: 15px;
   color: var(--main-font-color);
 }
 
@@ -832,8 +851,8 @@ body {
   position: relative;
   display: block;
   font-size: 17px;
-  line-height: 1.8;
-  text-align: right;
+  line-height: 1.9;
+  text-align: left;
   margin: 1vw 0;
   color: var(--main-font-color);
 }
@@ -858,6 +877,9 @@ body {
 .about-right {
   position: relative;
   display: block;
+}
+.my-picture-res {
+  display: none;
 }
 
 .my-picture {
@@ -974,9 +996,19 @@ body {
     text-align: center;
     margin: 10px 0;
   }
+  .about-period {
+    position: relative;
+    display: inline-block;
+    color: var(--main-font-color);
+  }
+
+  .about-period p {
+    line-height: 1.8;
+    text-align: left;
+  }
 
   .mywork p {
-    text-align: center;
+    text-align: left;
   }
 
   .experience-wrap {
@@ -1006,37 +1038,26 @@ body {
   }
 
   .about-right {
-    position: relative;
-    display: block;
+    display: none;
   }
 
-  .my-picture {
-    position: relative;
-    display: block;
-    width: 60vw;
-    height: 60vw;
-    margin: 20px auto;
-  }
-
-  .my-picture::after {
-    content: "";
-    position: absolute;
-    top: -1vw;
-    left: -1vw;
-    display: block;
-    width: 61vw;
-    height: 61vw;
-    z-index: -1;
-    border: 2px solid #333;
-    border-radius: 10px;
-  }
-
-  .my-picture img {
+  .my-picture-res {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
+    opacity: 1;
+    transition: all 1s;
+  }
+
+  .my-picture-res img {
+    position: relative;
+    display: block;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
     border-radius: 10px;
+    box-shadow: 0 0px 10px 0px #333;
   }
 }
 
@@ -1310,12 +1331,14 @@ body {
 }
 
 .mbti-desc {
-  position: absolute;
+  /* position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
+  position: relative;
   display: block;
-  height: 450px;
+  width: 55%;
+  height: 480px;
   float: left;
   background-color: rgba(20, 90, 120, 0.4);
   padding: 20px;
@@ -1324,8 +1347,10 @@ body {
 
 .mbti-depth1 {
   position: relative;
-  display: block;
+  display: flex;
   height: 100%;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .mbti-depth1 li {
@@ -1337,13 +1362,19 @@ body {
   display: block;
   font-size: 20px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  color: #e9e9e9;
 }
 
 .mbti-list-desc {
   position: relative;
   display: block;
+  font-size: 18px;
   margin-bottom: 15px;
+}
+
+.mbti-depth1 li:last-child .mbti-list-desc {
+  margin-bottom: 0;
 }
 
 #myChart {
@@ -1423,6 +1454,7 @@ body {
     top: 0;
     transform: none;
     display: block;
+    width: 100%;
     height: 100%;
     float: none;
     background-color: rgba(20, 90, 120, 0.4);
@@ -1450,7 +1482,7 @@ body {
   .mbti-list-desc {
     position: relative;
     display: block;
-    font-size: 1.5vw;
+    font-size: 3vw;
     margin-bottom: 15px;
   }
 
@@ -3074,13 +3106,19 @@ body {
   text-align: center;
   padding: 29px;
 }
+.sw-vision-slide div {
+  width: 100%;
+}
+.sw-vision-slide div div p {
+  text-align: left;
+}
 
 .sw-visionimg {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 .sw-vision-title {
@@ -3091,7 +3129,7 @@ body {
 }
 
 .sw-vision-title P {
-  font-size: 1vw;
+  font-size: 2vw;
   text-align: left;
 }
 
@@ -3100,7 +3138,7 @@ body {
   display: inline-block;
   font-size: 16px;
   font-weight: 500;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .sw-vision-control {
@@ -3255,6 +3293,138 @@ body {
   .sw-vision-title P {
     font-size: 5vw;
     text-align: center;
+  }
+}
+
+/* contact */
+.contact {
+  position: relative;
+  display: block;
+}
+.contact-me {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: 30px;
+  white-space: nowrap;
+  text-shadow: 3px 5px 2px #474747;
+}
+
+.contact-me::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  color: #333;
+}
+
+.contact-me::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #333;
+}
+
+.contact-list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list a {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  margin: 10px;
+  color: var(--main-font-color);
+  transition: all 0.5s;
+}
+
+.contact-mail:hover {
+  color: var(--point-color);
+}
+.contact-github:hover {
+  color: gray;
+}
+.contact-kakao:hover {
+  color: yellow;
+}
+.contact-resume:hover {
+  color: #ffffff;
+}
+
+@media all and (max-width: 1200px) {
+  .contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+  .contact .inner {
+    padding: 0 20px;
+  }
+  .contact-me {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    width: 100%;
+    font-size: 30px;
+    white-space: nowrap;
+    text-shadow: 3px 5px 2px #474747;
+  }
+
+  .contact-me::before {
+    content: "";
+    position: relative;
+    display: inline-block;
+    color: #333;
+  }
+
+  .contact-me::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #333;
+  }
+
+  .contact-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-list a {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    margin: 10px;
+    color: var(--main-font-color);
+    transition: all 0.5s;
+  }
+
+  .contact-mail:hover {
+    color: var(--point-color);
+  }
+  .contact-github:hover {
+    color: gray;
+  }
+  .contact-kakao:hover {
+    color: yellow;
+  }
+  .contact-resume:hover {
+    color: #ffffff;
   }
 }
 
