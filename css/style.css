@@ -1655,6 +1655,14 @@ body {
   margin: 100px 0;
 }
 
+.sw-port-pg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  font-size: 1.5vw;
+}
+
 .project-list-title {
   position: relative;
   display: block;
@@ -1698,8 +1706,8 @@ body {
   position: relative;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
-  width: 100vw;
+  overflow: visible;
+  /* width: 100vw; */
 }
 
 .swiper-wrapper {

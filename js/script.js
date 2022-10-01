@@ -194,10 +194,10 @@ window.onload = function () {
   let swPort = new Swiper(".sw-port", {
     direction: "horizontal",
     effect: "slide",
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     slidesPerView: "auto",
     slidesPerGroup: 1,
     loopAdditionalSlides: 1,
@@ -212,6 +212,11 @@ window.onload = function () {
       el: ".port-scrollbar",
       hide: false,
       draggable: true,
+    },
+    pagination: {
+      //페이징 사용자 설정
+      el: ".sw-port-control-main", //페이징 태그 클래스 설정
+      type: "fraction",
     },
   });
 
