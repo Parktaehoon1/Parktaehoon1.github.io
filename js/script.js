@@ -117,7 +117,7 @@ window.onload = function () {
 
   let dev = document.querySelector(".dev");
   console.log(dev);
-  dev.style.color = "#ccd6f6";
+  dev.style.color = "#112240";
 
   // chat.js 부분
   const ctx = document.getElementById("myChart");

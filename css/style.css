@@ -616,11 +616,11 @@ body {
 .me {
   position: relative;
   color: transparent;
-  -webkit-text-stroke: 1px var(--main-font-color);
+  -webkit-text-stroke: 1px var(--main-bg-color);
   transition: all 3s;
   transition-delay: 0.1s;
   font-size: 2vw;
-  color: var(--main-font-color);
+  color: var(--main-bg-color);
 }
 
 .intro-pic {
