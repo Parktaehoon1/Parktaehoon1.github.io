@@ -185,6 +185,7 @@ window.onload = function () {
     },
   });
   // portfolio swiper 부분
+
   let swPort = new Swiper(".sw-port", {
     direction: "horizontal",
     effect: "slide",
@@ -214,7 +215,6 @@ window.onload = function () {
     },
   });
 
-  // vision swiper 부분
   new Swiper(".sw-vision", {
     spaceBetween: 50,
     slidesPerView: 1,
