@@ -198,6 +198,8 @@ window.onload = function () {
     loopAdditionalSlides: 1,
     spaceBetween: 0,
     pauseOnMouseEnter: true,
+    observer: true, 
+    observeParents: true,
     // autoplay: true,
     navigation: {
       prevEl: ".port-button-prev",
@@ -227,7 +229,7 @@ window.onload = function () {
     breakpoints: {
       700: {
         slidesPerView: 2,
-        spaceBetween: 50,
+        spaceBetween: 0,
       },
     },
   });
