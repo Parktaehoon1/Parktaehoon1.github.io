@@ -152,6 +152,27 @@ body {
 ::-webkit-scrollbar-button {
   display: none;
 }
+/* 로딩창 */
+#load {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: block;
+	opacity: 0.8;
+	background: white;
+	z-index: 99999;
+	text-align: center;
+}
+
+#load > img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+	z-index: 100;
+}
 
 /* sns  */
 .sns {
@@ -563,6 +584,42 @@ body {
   padding-left: 80px;
   background: url("/images/proofile11.png") no-repeat left;
   background-size: cover;
+}
+
+.arrowdown{
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  transform: translateX(-50%);
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 99;
+  animation-name: arrowdown;
+  animation-duration:2s;
+  animation-duration: leaner;
+  animation-iteration-count: infinite;
+  animation-direction:initial;
+}
+.fa-angle-down{
+  transition: all 0.5s;
+  color: var(--main-port-bg-color);
+}
+.arrowdown:hover .fa-angle-down{
+  scale: 1.5;
+  color: var(--main-bg-color);
+}
+
+@keyframes arrowdown {
+  0% {
+    bottom:40px;
+  }
+  100% {
+    bottom:30px;
+  }
+  0% {
+    bottom: 40px;
+  }
 }
 
 .intro-container {
