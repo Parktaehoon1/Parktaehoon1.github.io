@@ -315,6 +315,16 @@ body {
   color: #fff;
   z-index: 99999;
 }
+.mb-github:hover{
+  color: gray;
+}
+.mb-email:hover{
+  color: orange;
+}
+
+.mb-resume:hover{
+  color: greenyellow;
+}
 
 @media all and (max-width: 750px) {
   .mb-btn {
