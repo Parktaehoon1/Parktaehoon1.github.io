@@ -2077,6 +2077,18 @@ body {
   .res-portfolio-wrap{
     position: relative;
     display: block;
+    margin: 40px 0;
+  }
+  .res-portfolio-main-title{
+    display: block;
+    text-align: center;
+    font-size: 4vw;
+    margin: 20px 0;
+    transition: all 0.3s;
+  }
+  .res-portfolio-wrap:hover .res-portfolio-main-title{
+    display: block;
+    color: var(--point-color);
   }
   .res-portfolio-container{
     position: relative;
