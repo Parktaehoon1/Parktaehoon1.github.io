@@ -421,7 +421,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: var(--main-font-color);
-  transition: all 0.3s;
+  transition: color 0.3s;
 }
 
 .depth1 li a span {
@@ -2197,6 +2197,7 @@ body {
   .res-port-btn-box span{
     font-size: 1.8vw;
     color: #fff;
+    cursor: pointer;
   }
   .res-vue-port{
     display: flex;
