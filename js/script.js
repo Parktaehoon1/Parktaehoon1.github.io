@@ -1,8 +1,8 @@
 $(document).ready(function () {
   // 로딩창
-  $(window).on('load', function () {
+  $(window).on("load", function () {
     $("#load").hide();
-});
+  });
 
   // sns창 나오게하기
   let mbWrap = $(".mb-wrap");
@@ -19,11 +19,11 @@ $(document).ready(function () {
     mbWrap.stop().fadeOut(500);
   });
   // intro부분 버튼 클릭시
-  let arrowDown = $('.arrowdown');
-    arrowDown.click(function(){
-      let offset = $('#about').offset();
-      $('html').animate({scrollTop:offset.top}, 1000)
-    })
+  let arrowDown = $(".arrowdown");
+  arrowDown.click(function () {
+    let offset = $("#about").offset();
+    $("html").animate({ scrollTop: offset.top }, 1000);
+  });
   // let snsWrap = $(".sns-list");
   // let sns = $(".sns");
   // let aboutY = $(".about-me").offset().top;
@@ -207,7 +207,7 @@ window.onload = function () {
     loopAdditionalSlides: 1,
     spaceBetween: 0,
     pauseOnMouseEnter: true,
-    observer: true, 
+    observer: true,
     observeParents: true,
     // autoplay: true,
     navigation: {

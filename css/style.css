@@ -154,24 +154,24 @@ body {
 }
 /* 로딩창 */
 #load {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	display: block;
-	opacity: 0.8;
-	background: white;
-	z-index: 99999;
-	text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: block;
+  opacity: 0.8;
+  background: white;
+  z-index: 99999;
+  text-align: center;
 }
 
 #load > img {
-	position: absolute;
-	top: 50%;
-	left: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-	z-index: 100;
+  z-index: 100;
 }
 
 /* sns  */
@@ -336,14 +336,14 @@ body {
   color: #fff;
   z-index: 99999;
 }
-.mb-github:hover{
+.mb-github:hover {
   color: gray;
 }
-.mb-email:hover{
+.mb-email:hover {
   color: orange;
 }
 
-.mb-resume:hover{
+.mb-resume:hover {
   color: greenyellow;
 }
 
@@ -394,7 +394,7 @@ body {
   width: 50px;
   height: 40px;
   color: #fff;
-  background: url("/images/Black-logo-no-background1111.png") no-repeat center;
+  background: url("/images/reallogo.png") no-repeat center;
   background-size: cover;
 }
 
@@ -586,7 +586,7 @@ body {
   background-size: cover;
 }
 
-.arrowdown{
+.arrowdown {
   position: absolute;
   left: 50%;
   bottom: 40px;
@@ -596,26 +596,26 @@ body {
   cursor: pointer;
   z-index: 99;
   animation-name: arrowdown;
-  animation-duration:2s;
+  animation-duration: 2s;
   animation-duration: leaner;
   animation-iteration-count: infinite;
-  animation-direction:initial;
+  animation-direction: initial;
 }
-.fa-angle-down{
+.fa-angle-down {
   transition: all 0.5s;
   color: var(--main-port-bg-color);
 }
-.arrowdown:hover .fa-angle-down{
+.arrowdown:hover .fa-angle-down {
   scale: 1.5;
   color: var(--main-bg-color);
 }
 
 @keyframes arrowdown {
   0% {
-    bottom:40px;
+    bottom: 40px;
   }
   100% {
-    bottom:30px;
+    bottom: 30px;
   }
   0% {
     bottom: 40px;
@@ -1957,7 +1957,7 @@ body {
   text-align: center;
 }
 
-.res-portfolio-wrap{
+.res-portfolio-wrap {
   display: none;
 }
 
@@ -2131,41 +2131,41 @@ body {
     position: relative;
     display: none;
   }
-  .res-portfolio-wrap{
+  .res-portfolio-wrap {
     position: relative;
     display: block;
     margin: 40px 0;
   }
-  .res-portfolio-main-title{
+  .res-portfolio-main-title {
     display: block;
     text-align: center;
     font-size: 4vw;
     margin: 20px 0;
     transition: all 0.3s;
   }
-  .res-portfolio-wrap:hover .res-portfolio-main-title{
+  .res-portfolio-wrap:hover .res-portfolio-main-title {
     display: block;
     color: var(--point-color);
   }
-  .res-portfolio-container{
+  .res-portfolio-container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .res-port-list{
+  .res-port-list {
     position: relative;
     display: inline-block;
     width: 30%;
     margin: 5px;
   }
-  .res-port-slide-img{
+  .res-port-slide-img {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
   }
-  .res-port-slide-box{
+  .res-port-slide-box {
     position: absolute;
     left: 0;
     top: 0;
@@ -2176,30 +2176,30 @@ body {
     opacity: 0;
     transition: all 0.5s;
   }
-  .res-port-list:hover .res-port-slide-box{
+  .res-port-list:hover .res-port-slide-box {
     opacity: 1;
   }
 
-  .res-port-txt-box{
+  .res-port-txt-box {
     display: block;
     height: 100%;
     padding: 10px;
   }
-  .res-port-subtitle{
+  .res-port-subtitle {
     color: #fff;
   }
-  .res-port-btn-box{
+  .res-port-btn-box {
     display: flex;
     height: 80%;
     justify-content: space-between;
     align-items: center;
   }
-  .res-port-btn-box span{
+  .res-port-btn-box span {
     font-size: 1.8vw;
     color: #fff;
     cursor: pointer;
   }
-  .res-vue-port{
+  .res-vue-port {
     display: flex;
     height: 80%;
     width: 100%;
@@ -2207,7 +2207,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .res-vue-port span{
+  .res-vue-port span {
     display: block;
     width: 100%;
     font-size: 1.8vw;
@@ -3112,7 +3112,7 @@ body {
   border-radius: 50%;
   z-index: 9;
 }
-.sw-vision-wrap{
+.sw-vision-wrap {
   position: relative;
   display: block;
   width: 100%;
@@ -3141,7 +3141,7 @@ body {
   font-weight: 500;
   margin-left: 20px;
 }
-.sw-vision-ment{
+.sw-vision-ment {
   text-align: left;
 }
 .sw-vision-control {
@@ -3171,8 +3171,6 @@ body {
   background-color: #888;
   opacity: 1;
 }
-
-
 
 @media all and (max-width: 1200px) {
   .vision {
