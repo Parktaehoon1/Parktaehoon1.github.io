@@ -3107,8 +3107,8 @@ body {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   z-index: 9;
 }
@@ -3160,7 +3160,7 @@ body {
 .swiper-pagination-bullet {
   position: relative;
   display: block;
-  background-color: #888;
+  background-color: var(--main-font-color);
   opacity: 0.7;
   margin: 10px 5px;
 }
@@ -3168,7 +3168,7 @@ body {
 .swiper-pagination-bullet-active {
   position: relative;
   display: block;
-  background-color: #888;
+  background-color: var(--point-color);
   opacity: 1;
 }
 
@@ -3283,7 +3283,7 @@ body {
   .swiper-pagination-bullet {
     position: relative;
     display: block;
-    background-color: #888;
+    background-color: var(--main-font-color);
     opacity: 0.7;
     margin: 10px 5px;
   }
@@ -3291,7 +3291,7 @@ body {
   .swiper-pagination-bullet-active {
     position: relative;
     display: block;
-    background-color: #888;
+    background-color: var(--point-color);
     opacity: 1;
   }
 }
