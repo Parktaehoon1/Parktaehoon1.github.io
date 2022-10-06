@@ -1908,7 +1908,8 @@ body {
 }
 
 .port-subdesc {
-  font-size: 1vw;
+  font-size: 0.8vw;
+  white-space: nowrap;
   line-height: 2rem;
   color: #fff;
   margin-top: 2vw;
