@@ -4,6 +4,29 @@ $(document).ready(function () {
     $("#load").hide();
   });
 
+  // goTop btn
+  let go_top = $(".gotop");
+  console.log(go_top);
+
+  $(window).scroll(function () {
+    let temp = $(window).scrollTop();
+    if (temp > 500) {
+      go_top.addClass("gotop-show");
+    } else {
+      go_top.removeClass("gotop-show");
+    }
+  });
+
+  // gotop 눌렀을 때 최상단으로 가는거
+  go_top.click(function () {
+    $("html").animate(
+      {
+        scrollTop: 0,
+      },
+      1000
+    );
+  });
+
   // sns창 나오게하기
   let mbWrap = $(".mb-wrap");
   let mbBtn = $(".mb-btn");
