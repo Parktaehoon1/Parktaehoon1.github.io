@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   // gotop 눌렀을 때 최상단으로 가는거
   go_top.click(function () {
-    $("html").animate(
+    $("html").stop().animate(
       {
         scrollTop: 0,
       },
